@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Popping</title>
+    </head>
+    <body  class="home">
+        <!-- Click to Play Overlay Screen-->
+        <div id="overlay">
+            <div id="overlay-content">
+                <h1>Welcome to<br>Popping!</h1>
+            </div>
+
+            <div>
+                <button>Demo:</button>
+                <br>
+                <div id="demoContainer"></div>
+            </div>
+
+            <div>
+                <button class="blue-btn" aria-label="Play button">Click to Play</button>
+            </div>
+        </div>
+        <!-- Overlay Effect-->
+        <div class="blink"></div>
+    
+        <!-- Border Box -->
+        <div class="border-box">
+            <header>
+                <!-- Logo -->
+                <h1 id="page-heading">
+                    <a class="logo" href="" aria-label="">Popping</a>
+                </h1>
+    
+                <nav>
+                    <!-- Sound control buttons -->
+                    <audio id="track" src="" type="audio/mpeg" autoplay></audio>
+                    <div class="outline-btn sound-btn">
+                    <div id="player-container">
+                        <div id="play-pause" class="play"><img id="muteIcon" src="" alt="unmuted"></div>
+                    </div>
+                    </div>
+                    <button id="mute-button" class="mute-button" aria-label="mute button"></button>
+                    <!-- How to Play Button -->
+                    
+                    <!-- Home Button -->
+                    <button id="home-button" class="outline-btn" aria-label="home button">Home</button>
+                </nav>
+            </header>
+    
+            <main class="grid">
+                <!-- Random category section -->
+                <div class="random-cat">
+                    <audio id="spinSound" src=""></audio>
+                    <div class="category-wheel">
+                    <ul class="spinner"></ul>
+                    <div class="cap">
+                        <button class="btn-spin" aria-label="wheel spin button">Spin the wheel</button>
+                    </div>
+                    <div class="ticker"></div>
+                    </div>
+                </div>
+            </main>
+            
+            <footer>
+                <div class="container">
+                    <!-- Contact Button -->
+                    <button data-open-modal class="contact-btn" aria-label="Contact button">Feedback / Message</button>
+                    <!-- Modal for Contact Form -->
+                    <dialog id="modalContact" data-modal>
+                        <div class="modal">
+                            <button class="btn close-btn" aria-label="close button" data-close-modal>&#10005;</button>
+                            <div id="contact-container">
+                                <h2>Get in Touch</h2>
+                                <p>Please use this form to provide any feedback / message.</p>
+                                <form id="contact-form">
+                                    <input type="hidden" name="contact_number">
+                                    <label for="name">NAME</label>
+                                    <input type="text" id="name" name="user_name" aria-label="Please enter your name" required>
+                                    <label for="email">EMAIL</label>
+                                    <input type="email" id="email" name="user_email" aria-label="Please enter your email" required>
+                                    <label for="message">YOUR MESSAGE</label>
+                                    <textarea id="message" name="message" aria-label="Please provide message" required></textarea>
+                                    <div id="submit-button">
+                                        <input type="submit" id="submit-contact-button" class="blue-btn" aria-label="Submit message">
+                                    </div>
+                                </form>
+                                <div id="thank-you-message"></div>
+                            </div>
+                        </div>
+                    </dialog>
+                    <!-- Copywrite -->
+                    <div class="copywrite">© 2023 Popping. All Rights Reserved.</div>
+                    <!-- Project description -->
+                    <p>This website was created for educational purposes only.</p>
+                </div>
+            </footer>
+        </div>
+    
+    </body>
+</html>
