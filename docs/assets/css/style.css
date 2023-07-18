@@ -1,0 +1,48 @@
+
+
+/***** Reset *****/
+*, *:before, *:after {
+    box-sizing:border-box;
+}
+
+/*****  Basic Styling *****/
+body {
+    font-family: "Orbitron", monospace;
+    padding:5rem;
+    margin-bottom: 5rem;
+    display: grid;
+    place-items: center;
+    height: 100dvh;
+    height: 100vh;
+}
+
+h1, h2, h3, h4 {
+    color: #fff;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin: 2rem;
+    align-items: center;
+    place-items: center;
+}
+
+main {
+    min-height: 70vh;
+    display: flex;
+    place-items: center;
+    flex-flow: column;
+    margin-bottom: 1rem;
+}
+
+
+/***** END - Basic Styling *****/
