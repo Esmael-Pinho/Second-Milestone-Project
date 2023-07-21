@@ -3,35 +3,42 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="welcome to Popping, want a fun game where you can test your math knowledge? Try Popping, pop, pop, pop, all the fun on Popping.">
+        <meta name="keywords" content="game, numbers, memory, fun">
+        <meta name="author" content="Esmael Pinho">
+        <meta name="theme-color" content="#317EFB">
 
 
         <!-- CSS Link -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
         <!-- Link the Google Fonts stylesheet -->
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Oswald:wght@500&family=Roboto+Mono&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
         <title>Popping</title>
+        <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+
     </head>
     <body  class="home">
-        <!-- Click to Play Overlay Screen-->
+        <!-- Overlay-->
         <div id="overlay">
             <div id="overlay-content">
                 <h1>Welcome to<br>Popping!</h1>
-            </div>
+                <div class="button btn-sm">
+                    <div class="btn" aria-label="Demo button">Demo</div>
+                    <div class="third-border-effect border-effect-color"></div>
+                    <div class="second-border-effect border-effect-color"></div>
+                    <div class="first-border-effect border-effect-color"></div>
+                </div>
 
-            <div>
-                <button>Demo:</button>
-                <br>
-                <div id="demoContainer"></div>
-            </div>
-
-            <div>
-                <button class="blue-btn" aria-label="Play button">Click to Play</button>
+                <div class="button btn-lg">
+                    <div class="btn" aria-label="Play button">Play</div>
+                    <div class="third-border-effect border-effect-color"></div>
+                    <div class="second-border-effect border-effect-color"></div>
+                    <div class="first-border-effect border-effect-color"></div>
+                </div>
             </div>
         </div>
-        <!-- Overlay Effect-->
-        <div class="blink"></div>
     
         <!-- Game Box -->
         <div class="game-box">
@@ -42,7 +49,7 @@
                 </h1>
     
                 <nav>
-                    <!-- Sound control buttons -->
+                    <!-- Sound  button -->
                     <audio id="track" src="" type="audio/mpeg" autoplay></audio>
                     <div class="outline-btn sound-btn">
                     <div id="player-container">
@@ -50,26 +57,12 @@
                     </div>
                     </div>
                     <button id="mute-button" class="mute-button" aria-label="mute button"></button>
-                    <!-- How to Play Button -->
                     
                     <!-- Home Button -->
                     <button id="home-button" class="outline-btn" aria-label="home button">Home</button>
                 </nav>
             </header>
     
-            <main class="grid">
-                <!-- Random section -->
-                <div class="random-cir">
-                    <audio id="spinSound" src=""></audio>
-                    <div class="category-wheel">
-                    <ul class="spinner"></ul>
-                    <div class="cen">
-                        <button class="btn-spin" aria-label="wheel spin button">Spin the wheel</button>
-                    </div>
-                    <div class="ticker"></div>
-                    </div>
-                </div>
-            </main>
             
             <footer>
                 <div class="container">

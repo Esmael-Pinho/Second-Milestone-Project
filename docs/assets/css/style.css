@@ -1,14 +1,49 @@
+/* ---------------  Roots ----------------- */
+:root {
+    --Persian-pink: #F282B8;
+    --Persian-rose: #F932AE;
+    --Pale-dogwood: #F5CDBE;
+    --Cherry-blossom-pink: #F1AFBC;
+    --Amethyst: #B15DD5;
+    --dark-red: #2e0a0a;
+    --red: #e64248;
+    --White: #fff;
+    --dark-blue: #051417;
+    --blue: #1a5eb3;
+}
+/* ---------------  /End Roots  -------------- */
 
 
-/***** Reset *****/
+/* ---------------   Import  -------------- */
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Oswald:wght@500&family=Roboto+Mono&family=Ubuntu:wght@400;700&display=swap');
+/* ---------------   /End Import  -------------- */
+
+
+/* ---------------   Reset  -------------- */
 *, *:before, *:after {
-    box-sizing:border-box;
+    box-sizing: border-box;
+}
+/* ---------------   /End Reset  -------------- */
+
+
+/* ---------------   Overlay  -------------- */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    background: linear-gradient(0deg, rgba(5, 20, 23, 0.8), rgba(5, 20, 23, 0.8)), url(../images/overlay.jpg) center var(--dark-blue);
 }
 
-/*****  Basic Styling *****/
 body {
-    font-family: "Orbitron", monospace;
-    padding:5rem;
+    font-family: "Ubuntu", 'Oswald', monospace;
+    background: var(--dark-blue);
+    padding: 5rem;
     margin-bottom: 5rem;
     display: grid;
     place-items: center;
@@ -16,33 +51,123 @@ body {
     height: 100vh;
 }
 
-h1, h2, h3, h4 {
-    color: #fff;
-    text-align: center;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
-
-.grid {
+#overlay-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
-    margin: 2rem;
-    align-items: center;
-    place-items: center;
+    grid-gap: 5rem;
+    justify-items: center;
+    text-align: center;
+    color: white;
+    z-index: 999999;
 }
 
-main {
-    min-height: 70vh;
+#overlay-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    max-width: 90%;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    font-family: 'Bruno Ace SC', sans-serif;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+.button {
+    position: relative;
     display: flex;
-    place-items: center;
-    flex-flow: column;
-    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.btn-lg {
+    width: 145px;
+    height: 145px;
+}
+
+.btn-sm {
+    width: 130px;
+    height: 130px;
 }
 
 
-/***** END - Basic Styling *****/
+.btn {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    border: none;
+    font-family: 'Oswald', Helvetica, sans-serif;
+    background-color: var(--Amethyst);
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: url() 0 0, pointer;
+}
+
+.border-effect-color {
+    border: 5px solid var(--White);
+}
+
+.third-border-effect,
+.second-border-effect,
+.first-border-effect {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+}
+
+.third-border-effect {
+    width: 80%;
+    height: 80%;
+    opacity: 40%;
+    transform: scale(0.8);
+    -moz-transition: transform 0.25s ease-in-out;
+    -webkit-transition: transform 0.25s ease-in-out;
+    -o-transition: transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
+}
+
+.second-border-effect {
+    width: 90%;
+    height: 90%;
+    opacity: 30%;
+    transform: scale(0.8);
+    -moz-transition: transform 0.25s 0.05s ease-in-out;
+    -webkit-transition: transform 0.25s 0.05s ease-in-out;
+    -o-transition: transform 0.25s 0.05s ease-in-out;
+    transition: transform 0.25s 0.05s ease-in-out;
+}
+
+.first-border-effect {
+    width: 100%;
+    height: 100%;
+    opacity: 20%;
+    transform: scale(0.8);
+    -moz-transition: transform 0.25s 0.1s ease-in-out;
+    -webkit-transition: transform 0.25s 0.1s ease-in-out;
+    -o-transition: transform 0.25s 0.1s ease-in-out;
+    transition: transform 0.25s 0.1s ease-in-out;
+}
+
+
+@media(hover: hover) {
+
+    .btn:hover {
+        font-size: 130%;
+    }
+
+    .btn:hover~* {
+        transform: scale(1);
+    }
+}
+
+/* ---------------   /End Overlay  -------------- */
+
