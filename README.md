@@ -21,10 +21,10 @@ Milestone Project 2.
 - [User Experience](#user-experience)
   * [User Stories](#user-stories)
     + [Users](#users)
-    + [Buisness Owner](#buisness-owner)
+    + [Business Owner](#business-owner)
 - [Design](#design)
   + [Overview](#overview)
-  + [Colour Scheme](#colour-scheme)
+  + [Color Scheme](#color-scheme)
   + [Typography](#typography)
   + [Wireframes](#wireframes)
 - [Wireframes](#wireframes)
@@ -51,7 +51,7 @@ Milestone Project 2.
 ### Users
 
 
-### Buisness Owner
+### Business Owner
 
 
 # Design
@@ -60,8 +60,11 @@ Milestone Project 2.
 
 
 
-## Colour
+## Color Scheme
+![Popping](docs/assets/images/readme/milestone-project-2.png)
 
+  * The website uses a palette of colors generated using the [Coolors]("https://coolors.co/") website. 
+  It uses a simple color scheme of Persian-pink and rose , Cherry-blossom and Amethyst with pops of dark-blue and red, along with the primary color.
 
 
 ## Typography
