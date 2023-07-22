@@ -139,8 +139,8 @@ To clone the DragonFly repository:
 # Credits
 
 ## Content
-* Logo image: [Microsoft Bing](https://w7.pngwing.com/pngs/419/294/png-transparent-sphere-ball-computer-color-drops-color-splash-color-pencil-computer.png)
-* Overlay image: [Unsplash](https://unsplash.com/photos/p203ekCK4Ac)
+* Logo image: [Microsoft Bing](https://www.pngkey.com/png/full/1-19017_bubbles-png.png)
+* 
 
 ## Code
 
