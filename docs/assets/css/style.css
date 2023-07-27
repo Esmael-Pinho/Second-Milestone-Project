@@ -46,12 +46,11 @@ body {
     margin: 0px;
     font-family: "Ubuntu", 'Oswald', monospace;
     background: var(--dark-blue);
-    padding: 5rem;
     margin-bottom: 5rem;
     display: grid;
-    place-items: center;
-    height: 100dvh;
-    height: 100vh;
+    /* align-items: center; */
+    justify-items: center;
+    /* height: 100vh; */
     overflow: hidden;
 }
 
@@ -71,13 +70,11 @@ body {
 }
 
 h1,h2 {
-    display: block;
     font-family: 'Bruno Ace SC', sans-serif;
-    font-weight: bold;
     background: transparent;
 }
 
-.pop a {
+.pop, a {
     background-image: var(--gradient);
     -webkit-background-clip: text;
     color: transparent;
@@ -241,10 +238,19 @@ section span:before {
         opacity: 0;
     }
 }
-
 /* ---------------   /End Overlay  -------------- */
 
 
+/* ---------------   /Levels  -------------- */
+.title {
+    font-size: 5rem;
+    margin-top: 3rem;
+    padding: 0;
+}
 
+#level-text {
+    color: var(--White);
+    font-family: "Ubuntu", 'Oswald', monospace;
+}
 
-  
+  /* ---------------   /End Levels  -------------- */
