@@ -144,6 +144,8 @@ To clone the DragonFly repository:
 
 ## Code
 
+* Logo Gradient: [Youtube](https://www.youtube.com/watch?v=f3mwKLXpOLk&list=PL4-IK0AVhVjMI45H5E9oE47wj-7AZLNnK)
+
 
 Please note this is a personal project. This website is purely for the sake of the developer's portfolio and not for public consumption.
 
