@@ -24,6 +24,8 @@
 /* ---------------   Reset  -------------- */
 *, *:before, *:after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 /* ---------------   /End Reset  -------------- */
 
@@ -49,7 +51,8 @@ body {
     margin-bottom: 5rem;
     display: grid;
     /* align-items: center; */
-    justify-items: center;
+    /* justify-items: center; */
+    text-align: center;
     /* height: 100vh; */
     overflow: hidden;
 }
@@ -74,11 +77,18 @@ h1,h2 {
     background: transparent;
 }
 
+.pop {
+    font-size: 56px;
+}
+
 .pop, a {
     background-image: var(--gradient);
     -webkit-background-clip: text;
     color: transparent;
+    text-decoration: none;
+
 }
+
 
 .button {
     position: relative;
@@ -86,9 +96,8 @@ h1,h2 {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-
-    animation: buttons 8s ease-out infinite;
 }
+
 
 .btn-lg {
     width: 145px;
@@ -115,6 +124,7 @@ h1,h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-transform: uppercase;
     cursor: url() 0 0, pointer;
 }
 
@@ -128,14 +138,6 @@ h1,h2 {
     border-radius: 50%;
 }
 
-@keyframes buttons {
-    0%,100% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(-5px);
-    }
-}
 
 .border-color {
     border: 5px solid var(--White);
@@ -242,15 +244,97 @@ section span:before {
 
 
 /* ---------------   /Levels  -------------- */
+
+#gameLevels {
+    /* background: url(); */
+}
+
 .title {
     font-size: 5rem;
-    margin-top: 3rem;
+    margin: 3rem auto;
+    text-align: center;
     padding: 0;
 }
 
 #level-text {
+    margin: 1.5rem auto;
     color: var(--White);
     font-family: "Ubuntu", 'Oswald', monospace;
 }
+
+.game-area {
+    background-color: var(--Amethyst);
+    box-sizing: border-box;
+    width: 85%;
+    height: 75vh;
+    max-height: 500px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    border-radius: 15px;
+}
+
+.level-difficulty-area {
+    width: 850px;
+    margin: 122px auto;
+}
+
+.easy, .medium, .hard {
+    display: inline-block;
+    width: 33%;
+    margin: 0;
+    padding: 0;
+}
+
+.easy {
+    animation: easy 6s ease-out infinite;
+}
+
+.medium {
+    animation: medium 8s ease-out infinite;
+}
+
+.hard {
+    animation: hard 10s ease-out infinite;
+}
+
+@keyframes easy {
+    0%,100% {
+        transform: translateY(145px);
+    }
+    50% {
+        transform: translateY(-145px);
+    }
+}
+
+@keyframes medium {
+    0%,100% {
+        transform: translateY(100px);
+    }
+    
+    50% {
+        transform: translateY(-100px);
+    }
+}
+
+@keyframes hard {
+    0%,100% {
+        transform: translateY(60px);
+    }
+    50% {
+        transform: translateY(-60px);
+    }
+}
+
+.btn--big {
+    width: 230px;
+    height: 230px;
+    padding-top: 10px;
+    margin: 0 30px;
+    color: var(--White);
+}
+
+
 
   /* ---------------   /End Levels  -------------- */

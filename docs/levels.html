@@ -20,27 +20,48 @@
         
 
     </head>
-    <body >
+    <body id="gameLevels">
         <header>
-            <h1 class="pop title">Popping</h1>
+            <h1 class="pop title">
+                <a href="index.html">Popping</a>
+            </h1>
         </header>
     
         <!-- Levels -->
-        <div>
+        
+        <div class="container">
             <h2 id="level-text">Select Your difficulty level </h2>
             <div class="game-area">
-                <div class="easy">
-
+                <div class="level-difficulty-area">
+                    <div class="easy">
+                        <div class="button btn-lg btn--big">
+                            <div class="btn" aria-label="Play button">easy</div>
+                            <div class="third-border-effect border-color"></div>
+                            <div class="second-border-effect border-color"></div>
+                            <div class="first-border-effect border-color"></div>
+                        </div>
+                    </div>
+                    <div class="medium">
+                        <div class="button btn-lg btn--big">
+                            <div class="btn" aria-label="Play button">medium</div>
+                            <div class="third-border-effect border-color"></div>
+                            <div class="second-border-effect border-color"></div>
+                            <div class="first-border-effect border-color"></div>
+                        </div>
+                    </div>
+                    <div class="hard">
+                        <div class="button btn-lg btn--big">
+                            <div class="btn" aria-label="Play button">hard</div>
+                            <div class="third-border-effect border-color"></div>
+                            <div class="second-border-effect border-color"></div>
+                            <div class="first-border-effect border-color"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="medium">
-
-                </div>
-                <div class="hard">
-
-                </div>
-            
             </div>
+            <!-- <button class="reset" onclick="window.location.reload();">reset game</button> -->
         </div>
+        
         
         <script src="assets/js/script.js" type="text/javascript"></script>
     </body>
