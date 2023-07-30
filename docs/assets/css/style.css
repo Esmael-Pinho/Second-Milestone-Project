@@ -1,5 +1,6 @@
 /* ---------------  Roots ----------------- */
 :root {
+    --light-blue: #5fa2c3;
     --purple: #800080;
     --Persian-pink: #F282B8;
     --Persian-rose: #F932AE;
@@ -51,11 +52,7 @@ body {
     background: var(--dark-blue);
     margin-bottom: 5rem;
     display: grid;
-    /* align-items: center; */
-    /* justify-items: center; */
     text-align: center;
-    /* height: 100vh; */
-    /* overflow: hidden; */
 }
 
 #overlay-content {
@@ -362,7 +359,32 @@ section span:before {
 
 
 footer a {
-    color:var(--light-blue);
+    color:var(--White);
+}
+
+#socials {
+    margin-top: 1.5rem;
+}
+
+#socials a {
+    font-size: 40px;
+    padding: 15px;
+}
+
+#facebook-icon:hover {
+    color: var(--blue);
+}
+
+#twitter-icon:hover {
+    color: var(--light-blue);
+}
+
+#youtube-icon:hover {
+    color: var(--red);
+}
+
+#instagram-icon:hover {
+    color: var(--purple);
 }
 
 /***** Modal *****/
