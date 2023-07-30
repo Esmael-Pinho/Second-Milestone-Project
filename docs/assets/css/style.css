@@ -1,5 +1,6 @@
 /* ---------------  Roots ----------------- */
 :root {
+    --purple: #800080;
     --Persian-pink: #F282B8;
     --Persian-rose: #F932AE;
     --Pale-dogwood: #F5CDBE;
@@ -11,7 +12,7 @@
     --White: #fff;
     --dark-blue: #051417;
     --blue: #1a5eb3;
-    --gradient: linear-gradient(90deg, #ee6352, purple, #ee6352);
+    --gradient: linear-gradient(90deg, #ee6352, #800080, #ee6352);
 }
 /* ---------------  /End Roots  -------------- */
 
@@ -54,7 +55,7 @@ body {
     /* justify-items: center; */
     text-align: center;
     /* height: 100vh; */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 #overlay-content {
@@ -75,6 +76,7 @@ body {
 h1,h2 {
     font-family: 'Bruno Ace SC', sans-serif;
     background: transparent;
+    text-align: center;
 }
 
 .pop {
@@ -246,8 +248,9 @@ section span:before {
 /* ---------------   /Levels  -------------- */
 
 #gameLevels {
-    /* background: url(); */
+    background: url("../images/logo1.png") center var(--dark-blue); 
 }
+
 
 .title {
     font-size: 5rem;
@@ -273,6 +276,7 @@ section span:before {
     margin-right: auto;
     padding: 1%;
     border-radius: 15px;
+    border: 5px solid #ee6352;
 }
 
 .level-difficulty-area {
@@ -286,6 +290,7 @@ section span:before {
     margin: 0;
     padding: 0;
 }
+
 
 .easy {
     animation: easy 6s ease-out infinite;
@@ -301,10 +306,10 @@ section span:before {
 
 @keyframes easy {
     0%,100% {
-        transform: translateY(145px);
+        transform: translateY(125px);
     }
     50% {
-        transform: translateY(-145px);
+        transform: translateY(-125px);
     }
 }
 
@@ -335,6 +340,136 @@ section span:before {
     color: var(--White);
 }
 
+.btn--big:hover {
+    color: #800080;
+}
+
+/* ---------------   /End Levels  -------------- */
+
+/* ---------------   Footer  -------------- */
+
+  footer {
+    color: #fff;
+    background-color:  var(--dark-blue);
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3.5rem;
+    border-radius: 15px;
+}
 
 
-  /* ---------------   /End Levels  -------------- */
+footer a {
+    color:var(--light-blue);
+}
+
+/***** Modal *****/
+
+dialog {
+    z-index: 10;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--Cherry-blossom-pink);
+    color: #fff;
+    box-shadow: 0px 0px 4px 2px var(--Persian-pink);
+    border: 2px solid var(--Persian-rose);
+    border-radius: 15px;
+    padding: 0;
+    margin: 0;
+    max-height: 80vh;
+    overflow-x: hidden;
+}
+dialog .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight:bold;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    border-radius: 0;
+    border: none;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    cursor:pointer;
+}
+dialog .close-btn:hover, dialog .close-btn:active {
+    color: var(--White);
+    background-color: var(--purple);
+    transition: all .25s;
+}
+.modal {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 3rem;
+    box-sizing: border-box;
+    max-width: 450px;
+    width: 80vw;
+    margin: 0 auto;
+}
+dialog p {
+    margin: 0 0 2rem;
+    padding: 1rem;
+}
+
+
+.message-btn {
+    display:block;
+    position: relative;
+    align-items: center;
+    padding: 10px;
+    background: none;
+    color: #fff;
+    border: 2px solid var(--purple);
+    font-size: 18px;
+    font-weight: bold;
+    margin: auto auto 1rem;
+    cursor: pointer;
+}
+.message-btn:hover {
+    color: var(--purple);
+    
+}
+
+#contact-form {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;  
+    justify-content: center;  
+    align-items: center;  
+    text-align: center; 
+    gap: 1rem; 
+}
+#submit-btn {
+    display: inline-grid;
+    grid-column: 1 / span 2;
+}
+
+.sub-btn {
+    margin: auto;
+    font-size: 22px;
+    padding: 20px;
+    min-width: 200px;
+    border-radius: 15px;
+}
+
+#contact-form input#name, #contact-form input#email, #contact-form textarea#message {
+    min-height: 35px;
+    color: var(--blue);
+    font-size: 18px;
+    font-family: "Ubuntu", Helvetica, sans-serif;
+}
+#contact-form input:focus, #contact-form input:hover, #contact-form input:active {
+    outline: 3px solid var(--purple);
+}
+/***** /End Modal *****/
+
+/* ---------------   /End Footer -------------- */
