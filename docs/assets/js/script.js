@@ -1,6 +1,15 @@
 
+document.addEventListener("DOMContentLoaded", function () {
+  const playButton = document.getElementById("play-button");
 
-function randomColor() {
+  function goToLevels() {
+    window.location.href = "levels.html";
+  }
+
+  playButton.addEventListener("click", goToLevels);
+
+
+  function randomColor() {
     return (
       "rgba(" +
       Math.round(Math.random() * 250) +
@@ -14,24 +23,27 @@ function randomColor() {
     );
   }
 
-function Bubbles() {
+  function Bubbles() {
 
-    const section = document.querySelector('section');
-    const createBubble = document.createElement('span');
-    var size = Math.random() * 90;
+      const section = document.querySelector('section');
+      const createBubble = document.createElement('span');
+      var size = Math.random() * 90;
 
-    createBubble.style.background = randomColor();
-    createBubble.style.width = 40 + size + 'px';
-    createBubble.style.height = 40 + size + 'px';
-    createBubble.style.left = Math.random() * innerWidth + 'px';
-    section.appendChild(createBubble);
+      createBubble.style.background = randomColor();
+      createBubble.style.width = 40 + size + 'px';
+      createBubble.style.height = 40 + size + 'px';
+      createBubble.style.left = Math.random() * innerWidth + 'px';
+      section.appendChild(createBubble);
 
-    setTimeout(() => {
-        createBubble.remove()
-    },5000)
+      setTimeout(() => {
+          createBubble.remove()
+      },8000)
 
-}
-setInterval(Bubbles,90);
+  }
+  setInterval(Bubbles,100);
+
+});
+
 
 
 
