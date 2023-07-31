@@ -27,7 +27,6 @@ Milestone Project 2.
   + [Color Scheme](#color-scheme)
   + [Typography](#typography)
   + [Wireframes](#wireframes)
-- [Wireframes](#wireframes)
 - [Features](#features)
   + [All Pages Features](#all-pages-features)
 - [Technologies used](#technologies-used)
@@ -49,6 +48,17 @@ Milestone Project 2.
 ## User Stories
 
 ### Users
+- As a player, I want the website to load quickly and provide a enjoyable experience.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Website Load | Player opens the website | The website loads quickly with no issues | Works as expected |
+
+- As a player, I want to be able to select the game level I want to play.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Level selected | Player choose button level | Game starts according to level selected | Works as expected |
 
 
 ### Business Owner
@@ -121,6 +131,13 @@ To clone the DragonFly repository:
 # Testing
 
 ### W3C Validator
+ * Initial Testing
+
+| **Overlay-Home-Page** | **Levels** | **Game** |
+|-----------------------|------------|----------|
+| [Home-Page](/docs/assets/images/readme/overlay-html.png) | [Levels](/docs/assets/images/readme/levels.html.png) | [Game-Page]() |
+
+
 
 
 ### Lighthouse

@@ -88,7 +88,6 @@ h1,h2 {
 
 }
 
-
 .button {
     position: relative;
     display: flex;
@@ -96,7 +95,6 @@ h1,h2 {
     justify-content: center;
     margin: 0 auto;
 }
-
 
 .btn-lg {
     width: 145px;
@@ -108,7 +106,6 @@ h1,h2 {
     width: 130px;
     height: 130px;
 }
-
 
 .btn {
     width: 70%;
@@ -136,7 +133,6 @@ h1,h2 {
     background: radial-gradient(#fff,transparent);
     border-radius: 50%;
 }
-
 
 .border-color {
     border: 5px solid var(--White);
@@ -182,7 +178,6 @@ h1,h2 {
     -o-transition: transform 0.25s 0.1s ease-in-out;
     transition: transform 0.25s 0.1s ease-in-out;
 }
-
 
 @media(hover: hover) {
 
@@ -405,6 +400,7 @@ dialog {
     max-height: 80vh;
     overflow-x: hidden;
 }
+
 dialog .close-btn {
     position: absolute;
     top: 10px;
@@ -420,11 +416,13 @@ dialog .close-btn {
     margin-bottom: 1rem;
     cursor:pointer;
 }
+
 dialog .close-btn:hover, dialog .close-btn:active {
     color: var(--White);
     background-color: var(--purple);
     transition: all .25s;
 }
+
 .modal {
     position: relative;
     display: flex;
@@ -438,11 +436,11 @@ dialog .close-btn:hover, dialog .close-btn:active {
     width: 80vw;
     margin: 0 auto;
 }
+
 dialog p {
     margin: 0 0 2rem;
     padding: 1rem;
 }
-
 
 .message-btn {
     display:block;
@@ -457,6 +455,7 @@ dialog p {
     margin: auto auto 1rem;
     cursor: pointer;
 }
+
 .message-btn:hover {
     color: var(--purple);
     
@@ -470,6 +469,7 @@ dialog p {
     text-align: center; 
     gap: 1rem; 
 }
+
 #submit-btn {
     display: inline-grid;
     grid-column: 1 / span 2;
@@ -489,9 +489,11 @@ dialog p {
     font-size: 18px;
     font-family: "Ubuntu", Helvetica, sans-serif;
 }
+
 #contact-form input:focus, #contact-form input:hover, #contact-form input:active {
     outline: 3px solid var(--purple);
 }
+
 /***** /End Modal *****/
 
 /* ---------------   /End Footer -------------- */
