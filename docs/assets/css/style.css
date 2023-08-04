@@ -339,7 +339,84 @@ section span:before {
 
 /* ---------------   /End Levels  -------------- */
 
+/* ---------------   Game  -------------- */
 
+.container {
+    width: 90%;
+    margin: auto;
+    
+}
+
+#game-heading {
+    margin-top: 1rem;
+}
+
+#scoreboard {
+    width: 50%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    color: var(--White);
+}
+
+#progress-bar {
+    border: 1px solid var(--White);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#progress-bar::-webkit-progress-bar {
+    background-color: #c7c4c4;
+}
+
+#progress-bar::-webkit-progress-value {
+    background-color: var(--light-blue);
+    animation: progressAnimation 2s linear infinite;
+}
+
+@keyframes progressAnimation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+#progress-text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.game-btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+#sound-btn {
+    background: url(../images/) center center/40px no-repeat var(--blue);
+}
+
+#home-btn {
+    background: url(../images/) center center/40px no-repeat var(--blue);
+}
+
+#questions-container {
+    width: 65%;
+    padding: 0 1rem;
+    margin: auto;
+}
+
+#questions {
+    font-family: "Ubuntu", 'Oswald', monospace;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+/* ---------------   /End Game  -------------- */
 
 /* ---------------   Footer  -------------- */
 
