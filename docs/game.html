@@ -16,51 +16,53 @@
         <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Oswald:wght@500&family=Roboto+Mono&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
         <link rel="icon" type="image/x-icon" href="assets/images/logo1.png">
-        <title>Popping - Choose Your Level</title>
+        <title>Popping - Lets's Pop </title>
         
 
     </head>
     <body id="gameLevels">
         <header>
-            <h1>
+            <h1 id="game-heading">
                 <a class="pop title" href="index.html">Popping</a>
             </h1>
         </header>
     
         <!-- Levels -->
         
-        <div >
-            <div>
-                <h2 id="level-text">Select Your difficulty level </h2>
+        <div class="container">
+            <div id="scoreboard">
+                <div class="scoreboard-item">
+                  <p class="scoreboard-prefix">
+                    Question
+                  </p>
+                  <h1 class="scoreboard-main-text" id="question-counter">1/10</h1>
+                  <progress id="progress-bar" value="10" max="100"></progress>
+                  <span id="progress-text">10%</span>
+                </div>
+                <div class="scoreboard-item">
+                    <button id="home-btn" class="game-btn"></button>
+                </div>
+                <div class="scoreboard-item">
+                    <button id="sound-btn" class="game-btn"></button>
+                </div>
+                <div class="scoreboard-item">
+                  <p class="scoreboard-prefix">
+                    Score
+                  </p>
+                  <h1 class="scoreboard-main-text" id="score">
+                    0
+                  </h1>
+                </div>
+            </div>
+
+            <div id="questions-container">
+                <h2 id="questions">
+                    Questions here
+                </h2>
             </div>
             
             <div class="game-area">
-                <div class="level-difficulty-area">
-                    <div class="easy">
-                        <div class="button btn-lg btn--big">
-                            <div class="btn">easy</div>
-                            <div class="third-border-effect border-color"></div>
-                            <div class="second-border-effect border-color"></div>
-                            <div class="first-border-effect border-color"></div>
-                        </div>
-                    </div>
-                    <div class="medium">
-                        <div class="button btn-lg btn--big">
-                            <div class="btn">medium</div>
-                            <div class="third-border-effect border-color"></div>
-                            <div class="second-border-effect border-color"></div>
-                            <div class="first-border-effect border-color"></div>
-                        </div>
-                    </div>
-                    <div class="hard">
-                        <div class="button btn-lg btn--big">
-                            <div class="btn">hard</div>
-                            <div class="third-border-effect border-color"></div>
-                            <div class="second-border-effect border-color"></div>
-                            <div class="first-border-effect border-color"></div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
             
         </div>

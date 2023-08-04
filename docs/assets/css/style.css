@@ -74,6 +74,7 @@ h1,h2 {
     font-family: 'Bruno Ace SC', sans-serif;
     background: transparent;
     text-align: center;
+    color: var(--White);
 }
 
 .pop {
@@ -337,6 +338,8 @@ section span:before {
 }
 
 /* ---------------   /End Levels  -------------- */
+
+
 
 /* ---------------   Footer  -------------- */
 
