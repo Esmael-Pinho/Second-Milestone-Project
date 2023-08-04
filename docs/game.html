@@ -20,11 +20,12 @@
         
 
     </head>
-    <body id="gameLevels">
-        <header>
+    <body id="game-page">
+        <header id="game-header">
             <h1 id="game-heading">
                 <a class="pop title" href="index.html">Popping</a>
             </h1>
+            <a id="sound-btn"><i class="fa-solid fa-volume-high"></i></a>
         </header>
     
         <!-- Levels -->
@@ -40,10 +41,20 @@
                   <span id="progress-text">10%</span>
                 </div>
                 <div class="scoreboard-item">
-                    <button id="home-btn" class="game-btn"></button>
+                    <p class="scoreboard-prefix">
+                      Correct Answers
+                    </p>
+                    <h1 class="scoreboard-main-text" id="score">
+                      0
+                    </h1>
                 </div>
                 <div class="scoreboard-item">
-                    <button id="sound-btn" class="game-btn"></button>
+                    <p class="scoreboard-prefix">
+                      Incorrect Answers
+                    </p>
+                    <h1 class="scoreboard-main-text" id="score">
+                      0
+                    </h1>
                 </div>
                 <div class="scoreboard-item">
                   <p class="scoreboard-prefix">

@@ -341,6 +341,12 @@ section span:before {
 
 /* ---------------   Game  -------------- */
 
+#game-header {
+    display: inline-flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
 .container {
     width: 90%;
     margin: auto;
@@ -390,19 +396,16 @@ section span:before {
     font-weight: bold;
 }
 
-.game-btn {
+#sound-btn {
+    margin: 2.5rem 2rem;
     height: 50px;
     width: 50px;
     border-radius: 50%;
+    font-size: 30px;
+    color: var(--White);
+    cursor: pointer;
 }
 
-#sound-btn {
-    background: url(../images/) center center/40px no-repeat var(--blue);
-}
-
-#home-btn {
-    background: url(../images/) center center/40px no-repeat var(--blue);
-}
 
 #questions-container {
     width: 65%;
