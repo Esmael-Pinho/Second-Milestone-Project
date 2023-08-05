@@ -1,6 +1,7 @@
-# ![Popping Logo]() 
 
 Milestone Project 2.
+
+# ![Popping Logo](/docs/assets/images/logo.png) 
 
 
 
@@ -22,6 +23,7 @@ Milestone Project 2.
   * [User Stories](#user-stories)
     + [Users](#users)
     + [Business Owner](#business-owner)
+  + [Future Features](#future-features)
 - [Design](#design)
   + [Overview](#overview)
   + [Color Scheme](#color-scheme)
@@ -52,22 +54,55 @@ Milestone Project 2.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Website Load | Player opens the website | The website loads quickly with no issues | Works as expected |
+| Website Load | Player opens the website | The website loads quickly with no issues | [Works as expected](/) |
 
-- As a player, I want to be able to select the game level I want to play.
+
+- As a player, I want to be able to visualize the contents of - Demo - so i can understand and interact with the game.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Level selected | Player choose button level | Game starts according to level selected | Works as expected |
+| Demo Button | Clicks demo button | Play button disappears, a video demonstration  shows with controls available  | [Works as expected](/) |
 
+
+
+- As a player, I want to have different levels to choose from and  be able to select which I want to play.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Level selected | Choose button level | Game starts according to level selected | Works as expected |
+
+
+- As a player, I want to be able to check my progress during the game.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Game Page | Game start - Mid Game - End Game  | Clear progress indication throughout the game  | [Works as expected](/) |
+
+
+- As a player, I want to be able to easily navigate back to the home page after completing the quiz.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Game ended | Game quiz completion | A congratulation message, along with the player score a play again button and a home button | [Works as expected](/) |
 
 ### Business Owner
+
+- I want to be able to receive feedback from players regarding any issues, or comments about the game.
+
+
+## Future Features 
+
+- Include a timer, increasing the game interactivity and hopefully excitement, with scoring based on their speed and accuracy.
+
+- I hope to implement a multiplayer scoreboard, along with players nicknames + pictures or icons.
+
+-  Create a system of goals, where they may earn some sort of badges | inspiring messages or even a new item, icon they can use in game.
 
 
 # Design
 
 ## Overview
-
+The website consists of three pages home-page, level-page, game-page. The pages are structured in an easy-to-navigate with simple buttons indicating their function allowing visitors to quickly understand the game. The demo button provides a video showing a little demonstration of what the game is and how to play, the play button takes the player, to the levels page with three levels to choose from (easy, medium, hard), upon the player level selection, to the game.
 
 
 ## Color Scheme
@@ -79,6 +114,10 @@ Milestone Project 2.
 
 ## Typography
 
+ Google Fonts was used for the following fonts:
+  * Bruno Ace Sc : was used for the logo.
+  * Ubuntu: was used for the headings, paragraphs and small texts.
+  * Sans-serif: used as the fallback font.
 
 ## Wireframes
 
@@ -138,6 +177,11 @@ To clone the DragonFly repository:
 | [Home-Page](/docs/assets/images/readme/overlay-html.png) | [Levels](/docs/assets/images/readme/levels.html.png) | [Game-Page]() |
 
 
+* Final Testing
+
+| **Overlay-Home-Page** | **Levels** | **Game** |
+|-----------------------|------------|----------|
+| [Home-Page](/) | [Levels](/) | [Game-Page]() |
 
 
 ### Lighthouse
@@ -148,9 +192,6 @@ To clone the DragonFly repository:
 ### Full Testing
 
 
-
-
-# Future Features 
 
 
 # Credits
