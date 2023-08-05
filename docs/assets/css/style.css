@@ -125,6 +125,12 @@ h1,h2 {
     cursor: url() 0 0, pointer;
 }
 
+video {
+    border-radius: 14px;
+    border: 3px solid var(--White);
+}
+
+
 .button .btn:before {
     content: '';
     position: absolute;

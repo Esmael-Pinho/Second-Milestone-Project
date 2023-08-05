@@ -54,6 +54,13 @@ function demoWindow() {
     </video>`;
 };
 
+// links each button to game.html 
+const buttons = document.querySelectorAll("#easy, #medium, #hard");
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        window.location.href = "game.html";
+    });
+  });
 
   
 
