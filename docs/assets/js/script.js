@@ -45,14 +45,6 @@ function Bubbles() {
 }
   setInterval(Bubbles,100);
 
-// adds demo video after clicking demo-button 
-function demoWindow() {
-  let demo = document.getElementById('demo-window');
-  demo.innerHTML = `<video width="500" controls>
-    <source src="./assets/video/video.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-    </video>`;
-};
 
 // links each button to game.html 
 const buttons = document.querySelectorAll("#easy, #medium, #hard");
@@ -61,6 +53,21 @@ const buttons = document.querySelectorAll("#easy, #medium, #hard");
         window.location.href = "game.html";
     });
   });
+
+
+$(document).ready(function() {
+
+
+  // shows demo video after clicking demo-button 
+  $("#demo-button").click(function() {
+    $("video").toggle();
+    $(".hide").toggle();
+  });
+
+});
+
+
+
 
   
 

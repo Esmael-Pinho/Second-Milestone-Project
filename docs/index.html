@@ -30,25 +30,28 @@
                         <a class="pop" href="index.html">Popping</a>
                     </h1>
                     <div id="play-demo" class="button btn-sm">
-                        <div id="demo-button" class="btn" aria-label="Demo button" onclick="demoWindow()">Demo</div>
+                        <div id="demo-button" class="btn" aria-label="Demo button">Demo</div>
                         <div class="third-border-effect border-color"></div>
                         <div class="second-border-effect border-color"></div>
                         <div class="first-border-effect border-color"></div>
                     </div>
-                    <div id="demo-window"></div>
-                    <div class="button btn-lg">
-                        <div id="play-button" class="btn" aria-label="Play button">Play</div>
-                        <div class="third-border-effect border-color"></div>
-                        <div class="second-border-effect border-color"></div>
-                        <div class="first-border-effect border-color"></div>
+                    <div id="demo-window"><video width="500" controls>
+                        <source src="/docs/assets/video/video.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                        </video></div>
+                    <div id="hide" class="button btn-lg show">
+                        <div id="play-button" class="btn hide" aria-label="Play button">Play</div>
+                        <div class="hide third-border-effect border-color"></div>
+                        <div class="hide second-border-effect border-color"></div>
+                        <div class="hide first-border-effect border-color"></div>
                     </div>
                 </div>
             </section>
         </div>
-    
-        <script src="assets/js/script.js"></script>
 
         <!-- JQuery Library -->
         <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <!-- My Script -->
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
