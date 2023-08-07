@@ -80,6 +80,7 @@ h1,h2 {
 
 .pop {
     font-size: 56px;
+    cursor: pointer;
 }
 
 .pop, a {
@@ -421,6 +422,10 @@ section span:before {
     height: 80px;
     border-radius: 50%;
     background-color: var(--Persian-rose);
+}
+
+.side-container:hover {
+    border: 3px solid var(--blue);
 }
 
 .game-home-btn {

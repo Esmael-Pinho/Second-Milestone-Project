@@ -71,6 +71,12 @@ $(document).ready(function() {
 
   // shows demo video after clicking demo-button 
   $("#demo-button").click(function() {
+    if (toggle) {
+      $("#demo-button").html("demo");
+    } else {
+      $("#demo-button").html("close"); // changes btn text to close
+    };
+    toggle = !toggle;
     $("video").toggle();
     $(".hide").toggle();
   });
@@ -90,9 +96,9 @@ $(document).ready(function() {
   var toggle = false;
   $(".sound-btn").click(function() {
     if (toggle) {
-      $(".sound-btn").html(`<i class="fa-solid fa-volume-xmark"></i>`);
-    } else {
       $(".sound-btn").html(`<i class="fa-solid fa-volume-high"></i>`);
+    } else {
+      $(".sound-btn").html(`<i class="fa-solid fa-volume-xmark"></i>`);
     }
     toggle = !toggle;
   });
