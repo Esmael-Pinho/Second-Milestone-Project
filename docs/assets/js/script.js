@@ -67,16 +67,29 @@ $(document).ready(function() {
     $(".hide").toggle();
   });
 
-
   // modal open after click feedback button
   $(".message-btn").click(function() {
     $("#modalContact").show();
   });
+
   // modal close after press X (close) button
   $(".close-btn").click(function() {
     $("#modalContact").hide();
   });
 
+
+  // alternates between sound on or off
+  var toggle = false;
+  $(".sound-btn").click(function() {
+    if (toggle) {
+      $(".sound-btn").html(`<i class="fa-solid fa-volume-xmark"></i>`);
+    } else {
+      $(".sound-btn").html(`<i class="fa-solid fa-volume-high"></i>`);
+    }
+    toggle = !toggle;
+  });
+
+  
 });
 
 

@@ -192,16 +192,14 @@ video {
     transition: transform 0.25s 0.1s ease-in-out;
 }
 
-@media(hover: hover) {
-
-    .btn:hover {
-        font-size: 130%;
-    }
-
-    .btn:hover~* {
-        transform: scale(1);
-    }
+.btn:hover {
+    font-size: 130%;
 }
+
+.btn:hover~* {
+    transform: scale(1);
+}
+
 
 section {
     position: relative;
@@ -273,7 +271,7 @@ section span:before {
 .game-area {
     background-color: var(--Amethyst);
     box-sizing: border-box;
-    width: 85%;
+    width: 900px;
     height: 75vh;
     max-height: 500px;
     max-width: 900px;
@@ -362,7 +360,6 @@ section span:before {
 .container {
     width: 90%;
     margin: auto;
-    
 }
 
 #game-heading {
@@ -371,7 +368,8 @@ section span:before {
 
 #scoreboard {
     width: 50%;
-    margin: 1rem auto;
+    margin: 1.85rem auto;
+    margin-bottom: 0;
     display: flex;
     justify-content: space-between;
     display: flex;
@@ -408,13 +406,65 @@ section span:before {
     font-weight: bold;
 }
 
-#sound-btn {
-    margin: 2.5rem 2rem;
-    height: 50px;
-    width: 50px;
+#game-container {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+}
+
+.side-container {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    font-size: 30px;
-    color: var(--White);
+    background-color: var(--Persian-rose);
+}
+
+.home-btn {
+    left: -15%;
+    top: 40%;
+}
+
+.play-pause-btn {
+    right: -15%;
+    top: 40%;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+#restart-btn-container {
+    position: absolute;
+    left: 47.5%;
+    bottom: 8px;
+    border: 2px solid var(--red);
+    border-radius: 50%;
+}
+
+#restart-btn {
+    text-transform: uppercase;
+    color: var(--blue);
+    width: 75px;
+    height: 75px;
+    background-color: var(--White);
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#restart-btn:hover {
+    font-size: 100%;
+}
+
+
+.sound-btn, .home-btn {
+    font-size: 45px;
+    color: var(--blue);
     cursor: pointer;
 }
 
