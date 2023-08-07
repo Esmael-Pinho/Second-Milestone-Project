@@ -48,14 +48,22 @@ document.addEventListener("DOMContentLoaded", function () {
  });
 
  // links each button to game.html 
- const buttons = document.querySelectorAll("#easy, #medium, #hard");
- buttons.forEach(button => {
-   button.addEventListener("click", () => {
-       window.location.href = "game.html";
+ const levelButtons = document.querySelectorAll("#easy, #medium, #hard");
+ levelButtons.forEach(button => {
+  button.addEventListener("click", () => {
+     window.location.href = "game.html";
+  });
+ });
+
+ // links logo and game home-btn to index.html
+ const homePageLink = document.querySelectorAll(".pop, .game-home-btn");
+ homePageLink.forEach(homeLink => {
+   homeLink.addEventListener("click", () => {
+     window.location.href = "index.html";
    });
  });
 
-
+ 
 
 
 $(document).ready(function() {
@@ -89,7 +97,7 @@ $(document).ready(function() {
     toggle = !toggle;
   });
 
-  
+
 });
 
 

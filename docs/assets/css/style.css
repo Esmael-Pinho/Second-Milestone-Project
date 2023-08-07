@@ -423,7 +423,7 @@ section span:before {
     background-color: var(--Persian-rose);
 }
 
-.home-btn {
+.game-home-btn {
     left: -15%;
     top: 40%;
 }
@@ -461,13 +461,11 @@ button {
     font-size: 100%;
 }
 
-
 .sound-btn, .home-btn {
     font-size: 45px;
     color: var(--blue);
     cursor: pointer;
 }
-
 
 #questions-container {
     width: 65%;
