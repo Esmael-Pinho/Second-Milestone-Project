@@ -2,12 +2,13 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-  let playButton = document.getElementById("play-button");
+  
   
 
   function goToLevels() {
     window.location.href = "levels.html";
   }
+  let playButton = document.getElementById("play-button");
   playButton.addEventListener("click", goToLevels); // play button links to levels page
 
 
