@@ -371,9 +371,7 @@ section span:before {
     width: 50%;
     margin: 1.85rem auto;
     margin-bottom: 0;
-    display: flex;
     justify-content: space-between;
-    display: flex;
     color: var(--White);
 }
 
@@ -447,7 +445,6 @@ button {
     position: absolute;
     left: 47.5%;
     bottom: 8px;
-    border: 2px solid var(--red);
     border-radius: 50%;
 }
 
@@ -460,6 +457,7 @@ button {
     border-radius: 50%;
     cursor: pointer;
     font-weight: bold;
+    border: 2px solid var(--red);
 }
 
 #restart-btn:hover {
@@ -621,6 +619,7 @@ dialog p {
 #submit-btn {
     display: inline-grid;
     grid-column: 1 / span 2;
+    margin: 50px;
 }
 
 .sub-btn {

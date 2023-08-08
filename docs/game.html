@@ -27,7 +27,7 @@
             </h1>
         </header>
     
-        <!-- Levels -->
+        <!-- Game -->
         
         <div class="container">
             <div id="scoreboard">
@@ -89,7 +89,7 @@
         </div>
 
         <footer>
-            <div class="container">
+            <div>
                 <!-- Contact Button -->
                 <button data-open-modal class="message-btn" aria-label="Contact button">Feedback / Report bugs</button>
                 <!-- Modal for Contact Form -->
@@ -101,11 +101,11 @@
                             <p>Please use this form to provide <br> feedback or report any bugs you <br> find.</p>
                             <form id="contact-form">
                                 <label for="name">NAME</label>
-                                <input type="text" id="name" name="user_name" aria-label="Please enter your name" required>
+                                <input type="text" id="name" name="user_name" aria-label="Please enter your name" placeholder=" John Smith" required>
                                 <label for="email">EMAIL</label>
-                                <input type="email" id="email" name="user_email" aria-label="Please enter your email" required>
+                                <input type="email" id="email" name="user_email" aria-label="Please enter your email" placeholder=" popping@gmail.com" required>
                                 <label for="message">YOUR MESSAGE</label>
-                                <textarea id="message" name="message" aria-label="Please provide message"
+                                <textarea id="message" name="message" aria-label="Please provide message" placeholder=" I have a few things to say about Popping..."
                                     required></textarea>
                                 <div id="submit-btn">
                                     <input type="submit" id="contact-btn" class="message-btn sub-btn" aria-label="Submit message">

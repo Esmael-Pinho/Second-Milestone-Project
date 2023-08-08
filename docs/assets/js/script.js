@@ -63,7 +63,8 @@ document.addEventListener("DOMContentLoaded", function () {
    });
  });
 
- 
+
+
 
 
 $(document).ready(function() {
@@ -81,14 +82,18 @@ $(document).ready(function() {
     $(".hide").toggle();
   });
 
-  // modal open after click feedback button
-  $(".message-btn").click(function() {
-    $("#modalContact").show();
-  });
+  // Initially hide the scoreboard and the questions
+  $('#scoreboard').hide();
+  $('#questions').hide();
+  $('.container').css('margin-top', '12.09rem', 'margin-bottom', '0');
 
-  // modal close after press X (close) button
-  $(".close-btn").click(function() {
-    $("#modalContact").hide();
+  // Show the scoreboard and questions when the button is clicked, and hide start btn
+  $('#restart-btn').click(function() {
+      $('#scoreboard').show();
+      $('#scoreboard').css('display', 'flex');
+      $('.container').css('margin-top', 'auto');
+      $('#questions').show();
+      $('#restart-btn').hide();
   });
 
 
@@ -102,6 +107,19 @@ $(document).ready(function() {
     }
     toggle = !toggle;
   });
+
+
+  // modal open after click feedback button
+  $(".message-btn").click(function() {
+    $("#modalContact").show();
+  });
+
+  // modal close after press X (close) button
+  $(".close-btn").click(function() {
+    $("#modalContact").hide();
+  });
+
+
 
 
 });
