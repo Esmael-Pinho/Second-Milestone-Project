@@ -84,15 +84,13 @@ $(document).ready(function() {
 
   // Initially hide the scoreboard and the questions
   $('#scoreboard').hide();
-  $('#questions').hide();
-  $('.container').css('margin-top', '12.09rem', 'margin-bottom', '0');
+  $('.container').css('margin-top', '6.59rem', 'margin-bottom', '0');
 
   // Show the scoreboard and questions when the button is clicked, and hide start btn
   $('#restart-btn').click(function() {
       $('#scoreboard').show();
       $('#scoreboard').css('display', 'flex');
       $('.container').css('margin-top', 'auto');
-      $('#questions').show();
       $('#restart-btn').hide();
   });
 
