@@ -405,6 +405,18 @@ section span:before {
     font-weight: bold;
 }
 
+#questions-container {
+    width: 65%;
+    padding: 0 1rem;
+    margin: auto;
+}
+
+#question {
+    font-family: "Ubuntu", 'Oswald', monospace;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
 #game-container {
     display: inline-flex;
     position: relative;
@@ -441,6 +453,15 @@ button {
     border: none;
 }
 
+#popping-game {
+    position: absolute;
+    top: auto;
+    left: 50px;
+    width: 800px;
+    height: 50vh;
+    /* border: 2px solid var(--White); */
+}
+
 #restart-btn-container {
     position: absolute;
     left: 47.5%;
@@ -468,18 +489,6 @@ button {
     font-size: 45px;
     color: var(--blue);
     cursor: pointer;
-}
-
-#questions-container {
-    width: 65%;
-    padding: 0 1rem;
-    margin: auto;
-}
-
-#questions {
-    font-family: "Ubuntu", 'Oswald', monospace;
-    padding: 1rem 2rem;
-    text-align: center;
 }
 
 /* ---------------   /End Game  -------------- */

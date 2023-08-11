@@ -1,21 +1,56 @@
-
-    [
+{
+    "questions": [
       {
-        "question": "Maria has eaten 5 apples from her initial 15, how many is left? ",
         "level": "easy",
-        "answer": "10"
+        "question": "maria has 4 apples and she has eaten 3 how many she are left?",
+        "answer": ""
       },
       {
-        "question": "Ms.Helena bought 2 extra chairs to add to her already 4 chairs collection, how many sets Helena have?",
         "level": "easy",
-        "answer": "6"
+        "question": "What is the largest planet in our solar system?",
+        "answer": ""
       },
       {
-        "question": "John now have 30 pokemon cards from his initial 100 cards, how many did he lost?",
         "level": "easy",
-        "answer": "70"
+        "question": "What is the smallest continent by land area?",
+        "answer": ""
+      },
+      {
+        "level": "medium",
+        "question": "What is the chemical symbol for gold?",
+        "answer": ""
+      },
+      {
+        "level": "medium",
+        "question": "What is the highest mountain in the world?",
+        "answer": ""
+      },
+      {
+        "level": "medium",
+        "question": "Who wrote the play 'Hamlet'?",
+        "answer": ""
+      },
+      
+      {
+        "level": "hard",
+        "question": "What is the capital of Burkina Faso?",
+        "answer": ""
+      },
+      {
+        "level": "hard",
+        "question": "What is the smallest prime number?",
+        "answer": 2
+      },
+      {
+        "level": "hard",
+        "question": "Who was the first person to reach the South Pole?",
+        "answer": ""
       }
       
     ]
+  }
+  
+
+
 
 
