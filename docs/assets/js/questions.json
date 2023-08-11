@@ -7,8 +7,8 @@
       },
       {
         "level": "easy",
-        "question": "What is the largest planet in our solar system?",
-        "answer": ""
+        "question": "What is 2 + 2?",
+        "answer": "4"
       },
       {
         "level": "easy",
@@ -16,9 +16,14 @@
         "answer": ""
       },
       {
-        "level": "medium",
-        "question": "What is the chemical symbol for gold?",
+        "level": "easy",
+        "question": "Who was the first person to reach the South Pole?",
         "answer": ""
+      },
+      {
+        "level": "medium",
+        "question": "What is the square root of 144?",
+        "answer": "12"
       },
       {
         "level": "medium",
@@ -30,11 +35,16 @@
         "question": "Who wrote the play 'Hamlet'?",
         "answer": ""
       },
+      {
+        "level": "medium",
+        "question": "Who was the last person to reach the South Pole?",
+        "answer": ""
+      },
       
       {
         "level": "hard",
-        "question": "What is the capital of Burkina Faso?",
-        "answer": ""
+        "question": "What is the derivative of x^2?",
+        "answer": "2x"
       },
       {
         "level": "hard",
@@ -43,8 +53,13 @@
       },
       {
         "level": "hard",
-        "question": "Who was the first person to reach the South Pole?",
+        "question": "Who was the hard person to reach the South Pole?",
         "answer": ""
+      },
+      {
+        "level": "hard",
+        "question": "If 2 = 5  and 4 = 9 what's the value of 2 x 4 ?",
+        "answer": "45"
       }
       
     ]

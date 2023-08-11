@@ -10,6 +10,12 @@ $(document).ready(function() {
     window.location.href = "levels.html";
   });
 
+  // links logo and game home-btn to index.html
+  $(".pop, .game-home-btn").click(function() {
+    window.location.href = "index.html";
+  });
+
+
   // creates random colors for the bubbles 
   function randomColor() {
     return (
@@ -47,19 +53,6 @@ $(document).ready(function() {
   setInterval(Bubbles,100);
 
 
-  // links each button to game.html 
-  $("#easy, #medium, #hard").click(function() {
-    window.location.href = "game.html";
-  });
-
-  // links logo and game home-btn to index.html
-  $(".pop, .game-home-btn").click(function() {
-    window.location.href = "index.html";
-  });
-
-
-
-
   // shows demo video after clicking demo-button 
   $("#demo-button").click(function() {
     if (toggle) {
@@ -75,7 +68,7 @@ $(document).ready(function() {
   // Initially hide the scoreboard and the questions
   $('#scoreboard').hide();
   $('.container').css('margin-top', '6.59rem', 'margin-bottom', '0');
-  
+
 
   // Show the scoreboard and questions when the button is clicked, and hide start btn
   $('#restart-btn').click(function() {
