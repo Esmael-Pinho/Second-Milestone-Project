@@ -39,7 +39,10 @@ $(document).ready(function() {
       $('#question').text(question.question);
     }
   
-    
+    // testing if questions change by action
+    $('#start-btn').on('click', () => {
+        displayRandomQuestion(level);
+      });
   
     // Show the scoreboard and questions when the button is clicked, and hide start btn
     $('#start-btn').click(function() {
