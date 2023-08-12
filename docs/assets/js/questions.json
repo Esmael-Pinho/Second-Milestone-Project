@@ -1,64 +1,185 @@
 [
     {
-      "question": "maria has 4 apples and she has eaten 3 how many are left?",
+      "question": "Maria has 4 apples and she has eaten 3 how many are left?",
       "level": "easy",
       "answer": "1"
     },
     {
-      "question": "What is 2 + 2?",
+      "question": "If you have 3 apples and your friend gives you 2 more, how many apples do you have in total?",
       "level": "easy",
-      "answer": "4"
+      "answer": "5"
     },
     {
-      "question": "What is the smallest continent by land area?",
+      "question": "If a box of cookies contains 10 cookies and you eat 4 of them, how many cookies are left in the box?",
       "level": "easy",
-      "answer": ""
+      "answer": "6"
     },
     {
-      "question": "Who was the first person to reach the South Pole?",
+      "question": "If a car travels 30 miles per hour and you travel for 2 hours, how many miles will you have traveled?",
       "level": "easy",
-      "answer": ""
+      "answer": "60"
     },
+    {
+      "question": "If a shirt costs $20 and you have a coupon for $5 off, how much will the shirt cost after the discount is applied?",
+      "level": "easy",
+      "answer": "15"
+    },
+    {
+      "question": "If a recipe calls for 2 cups of flour and you want to make half the recipe, how many cups of flour will you need?",
+      "level": "easy",
+      "answer": "1"
+    },
+    {
+      "question": "If a movie starts at 7:00 PM and is 2 hours long, at what time will the movie end?",
+      "level": "easy",
+      "answer": "9"
+    },
+    {
+      "question": "Which is the only number that cannot be used as a Divisor?",
+      "level": "easy",
+      "answer": "0"
+    },
+    {
+      "question": "The cost of 1 book is 7£. What is the cost of 6 books?",
+      "level": "easy",
+      "answer": "42"
+    },
+    {
+      "question": "Wow many 5 you need to make 25?",
+      "level": "easy",
+      "answer": "5"
+    },
+    {
+      "question": "From these numbers 25, 55, 78, 435 and 12, what is the smallest?",
+      "level": "easy",
+      "answer": "12"
+    },
+    {
+      "question": "If you multiply all the numbers on the phone. What will you get?",
+      "level": "easy",
+      "answer": "0"
+    },
+
     {
       "question": "What is the square root of 144?",
       "level": "medium",
       "answer": "12"
     },
     {
-      "question": "What is the highest mountain in the world?",
+      "question": "Look at this series: 36, 34, 30, 28, 24, … What number should come next?",
       "level": "medium",
-      "answer": ""
+      "answer": "22"
     },
     {
-      "question": "Who wrote the play 'Hamlet'?",
+      "question": "At a party everyone shook hands with everyone else. In total, there were 66 handshakes. How many were at the party?",
       "level": "medium",
-      "answer": ""
+      "answer": "7"
     },
     {
-      "question": "Who was the last person to reach the South Pole?",
+      "question": "What is the only number that is twice the sum of its digits (other than zero)?",
       "level": "medium",
-      "answer": ""
+      "answer": "18"
+    },
+    {
+      "question": "The total number of dots on a dice?",
+      "level": "medium",
+      "answer": "21"
+    },
+    {
+      "question": "Lesley ranked 8th from the top & 26th from the bottom in a class. How many students are there in the class?",
+      "level": "medium",
+      "answer": "33"
+    },
+    {
+      "question": "A farmer has 17 sheep and all but 9 die. How many are left?",
+      "level": "medium",
+      "answer": "9"
+    },
+    {
+      "question": "In a store there are 3 apples and you take away 2, how many do you have?",
+      "level": "medium",
+      "answer": "2"
+    },
+    {
+      "question": "In a family with 2 mothers, 2 daughters, 1 grandmother and 1 grandmother. How many people are in the family?",
+      "level": "medium",
+      "answer": "3"
+    },
+    {
+      "question": "I am a number between 0 and 10. I am more than 2. I am before 4. Who am I?",
+      "level": "medium",
+      "answer": "3"
+    },
+    {
+      "question": "There are 10 fish in a tank, 2 drown, 4 swam away and 3 changed colors. How many are there now?",
+      "level": "medium",
+      "answer": "10"
+    },
+    {
+      "question": "John has 4 pencils. Ruby has 5 pencils. How many they have altogether?",
+      "level": "medium",
+      "answer": "9"
     },
     
     {
-      "question": "What is the derivative of x^2?",
+      "question": "If a boy blows 18 bubbles, Then pops 6 eats 7 and then he pops 5 and blows 1. How many are left?",
       "level": "hard",
-      "answer": "2x"
+      "answer": "1"
     },
     {
       "question": "What is the smallest prime number?",
       "level": "hard",
-      "answer": 2
+      "answer": "2"
     },
     {
-      "question": "Who was the hard person to reach the South Pole?",
+      "question": "Sally is 54 years old and her mother is 80, how many years ago was Sally’s mother times her age?",
       "level": "hard",
-      "answer": ""
+      "answer": "41"
     },
     {
-      "question": "If 2 = 5  and 4 = 9 what's the value of 2 x 4 ?",
+      "question": "If 2 =5  and 4 = 9 what's the value of 2 x 4 + 1 ?",
       "level": "hard",
-      "answer": "45"
+      "answer": "46"
+    },
+    {
+      "question": "If 1 = 3,  2 = 2,  3 = 5,  4 = 4,  5 = 4 Then, 6 = ?",
+      "level" : "hard",
+      "answer": "3"
+    },
+    {
+      "question": "What is the thirteenth prime number?",
+      "level" : "hard",
+      "answer": "41"
+    },
+    {
+      "question": "What is the next prime number after 5?",
+      "level" : "hard",
+      "answer": "7"
+    },
+    {
+      "question": "A clock chimes 5 times in 4 seconds. How many times will it chime in 10 seconds?",
+      "level" : "hard",
+      "answer": "11"
+    },
+    {
+      "question": "Pick a number from 1-10, multiply it by 2, add ten, divide it by 2. Take away the number you started with. What is your number?",
+      "level" : "hard",
+      "answer": "5"
+    },
+    {
+      "question": "My big brother is 4 years old, i am half is age. In 50 years, how old will I be?",
+      "level" : "hard",
+      "answer": "52"
+    },
+    {
+      "question": "If four men can build four tables in four hours, how many can eight men build in eight hours?",
+      "level" : "hard",
+      "answer": "16"
+    },
+    {
+      "question": "If you multiply this number by any other number, the answer will always be the same. What is the number?",
+      "level" : "hard",
+      "answer": "0"
     }
       
 ]
