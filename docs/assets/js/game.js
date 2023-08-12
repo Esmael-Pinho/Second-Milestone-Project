@@ -12,7 +12,6 @@ $(document).ready(function() {
     // Load questions from JSON file
     $.getJSON('./assets/js/questions.json', data => {
       questions = data;
-      displayRandomQuestion(level);
     }).fail((jqxhr, textStatus, error) => {
       console.error("Error fetching questions:", error);
     });
@@ -49,7 +48,7 @@ $(document).ready(function() {
       $('#scoreboard').show();
       $('#scoreboard').css('display', 'flex');
       $('.container').css('margin-top', 'auto');
-      $('#restart-btn').hide();
+    //   $('#restart-btn').hide();
     });
   
     // Initially hide the scoreboard and the questions

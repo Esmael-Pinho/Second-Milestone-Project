@@ -406,12 +406,16 @@ section span:before {
 }
 
 #questions-container {
-    width: 65%;
+    width: 850px;
+    height: 87px;
+    min-width: 850px;
+    min-height: 87px;
     padding: 0 1rem;
     margin: auto;
 }
 
 #question {
+    min-width: 200px;
     font-family: "Ubuntu", 'Oswald', monospace;
     padding: 1rem 2rem;
     text-align: center;

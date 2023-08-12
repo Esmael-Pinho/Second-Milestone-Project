@@ -45,7 +45,7 @@
       "answer": "42"
     },
     {
-      "question": "Wow many 5 you need to make 25?",
+      "question": "How many 5 you need to make 25?",
       "level": "easy",
       "answer": "5"
     },
@@ -167,12 +167,12 @@
       "answer": "5"
     },
     {
-      "question": "My big brother is 4 years old, i am half is age. In 50 years, how old will I be?",
+      "question": "My big brother is 4 years old, I am half is age. In 50 years, how old will I be?",
       "level" : "hard",
       "answer": "52"
     },
     {
-      "question": "If four men can build four tables in four hours, how many can eight men build in eight hours?",
+      "question": "If 4 men can build four tables in 4 hours, how many can 8 men build in eight hours?",
       "level" : "hard",
       "answer": "16"
     },
