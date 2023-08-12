@@ -1,69 +1,67 @@
-{
-    "questions": [
-      {
-        "level": "easy",
-        "question": "maria has 4 apples and she has eaten 3 how many she are left?",
-        "answer": ""
-      },
-      {
-        "level": "easy",
-        "question": "What is 2 + 2?",
-        "answer": "4"
-      },
-      {
-        "level": "easy",
-        "question": "What is the smallest continent by land area?",
-        "answer": ""
-      },
-      {
-        "level": "easy",
-        "question": "Who was the first person to reach the South Pole?",
-        "answer": ""
-      },
-      {
-        "level": "medium",
-        "question": "What is the square root of 144?",
-        "answer": "12"
-      },
-      {
-        "level": "medium",
-        "question": "What is the highest mountain in the world?",
-        "answer": ""
-      },
-      {
-        "level": "medium",
-        "question": "Who wrote the play 'Hamlet'?",
-        "answer": ""
-      },
-      {
-        "level": "medium",
-        "question": "Who was the last person to reach the South Pole?",
-        "answer": ""
-      },
+[
+    {
+      "question": "maria has 4 apples and she has eaten 3 how many are left?",
+      "level": "easy",
+      "answer": "1"
+    },
+    {
+      "question": "What is 2 + 2?",
+      "level": "easy",
+      "answer": "4"
+    },
+    {
+      "question": "What is the smallest continent by land area?",
+      "level": "easy",
+      "answer": ""
+    },
+    {
+      "question": "Who was the first person to reach the South Pole?",
+      "level": "easy",
+      "answer": ""
+    },
+    {
+      "question": "What is the square root of 144?",
+      "level": "medium",
+      "answer": "12"
+    },
+    {
+      "question": "What is the highest mountain in the world?",
+      "level": "medium",
+      "answer": ""
+    },
+    {
+      "question": "Who wrote the play 'Hamlet'?",
+      "level": "medium",
+      "answer": ""
+    },
+    {
+      "question": "Who was the last person to reach the South Pole?",
+      "level": "medium",
+      "answer": ""
+    },
+    
+    {
+      "question": "What is the derivative of x^2?",
+      "level": "hard",
+      "answer": "2x"
+    },
+    {
+      "question": "What is the smallest prime number?",
+      "level": "hard",
+      "answer": 2
+    },
+    {
+      "question": "Who was the hard person to reach the South Pole?",
+      "level": "hard",
+      "answer": ""
+    },
+    {
+      "question": "If 2 = 5  and 4 = 9 what's the value of 2 x 4 ?",
+      "level": "hard",
+      "answer": "45"
+    }
       
-      {
-        "level": "hard",
-        "question": "What is the derivative of x^2?",
-        "answer": "2x"
-      },
-      {
-        "level": "hard",
-        "question": "What is the smallest prime number?",
-        "answer": 2
-      },
-      {
-        "level": "hard",
-        "question": "Who was the hard person to reach the South Pole?",
-        "answer": ""
-      },
-      {
-        "level": "hard",
-        "question": "If 2 = 5  and 4 = 9 what's the value of 2 x 4 ?",
-        "answer": "45"
-      }
-      
-    ]
-  }
+]
   
 
 

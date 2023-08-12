@@ -65,17 +65,18 @@ $(document).ready(function() {
     $(".hide").toggle();
   });
 
-  // Initially hide the scoreboard and the questions
-  $('#scoreboard').hide();
-  $('.container').css('margin-top', '6.59rem', 'margin-bottom', '0');
 
+  // link buttons to game.html and attribute the level
+  $('#easy').on('click', () => {
+    window.location.href = 'game.html?level=easy';
+  });
 
-  // Show the scoreboard and questions when the button is clicked, and hide start btn
-  $('#restart-btn').click(function() {
-      $('#scoreboard').show();
-      $('#scoreboard').css('display', 'flex');
-      $('.container').css('margin-top', 'auto');
-      $('#restart-btn').hide();
+  $('#medium').on('click', () => {
+    window.location.href = 'game.html?level=medium';
+  });
+
+  $('#hard').on('click', () => {
+    window.location.href = 'game.html?level=hard';
   });
 
 
@@ -102,7 +103,6 @@ $(document).ready(function() {
 
 
 });
-
 
 
 

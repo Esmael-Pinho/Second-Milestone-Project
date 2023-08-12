@@ -459,17 +459,16 @@ button {
     left: 50px;
     width: 800px;
     height: 50vh;
-    /* border: 2px solid var(--White); */
 }
 
-#restart-btn-container {
+#start-restart-btn-container {
     position: absolute;
     left: 47.5%;
     bottom: 8px;
     border-radius: 50%;
 }
 
-#restart-btn {
+#start-btn {
     text-transform: uppercase;
     color: var(--blue);
     width: 75px;
@@ -481,7 +480,7 @@ button {
     border: 2px solid var(--red);
 }
 
-#restart-btn:hover {
+#start-btn:hover {
     font-size: 100%;
 }
 
