@@ -54,7 +54,7 @@ Milestone Project 2.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Website Load | Player opens the website | The website loads quickly with no issues | [Works as expected](/) |
+| Website Load | Player opens the website | The website loads quickly with no issues | [Works as expected](docs/assets/images/readme/home-page.png) |
 
 
 - As a player, I want to be able to visualize the contents of - Demo - so i can understand and interact with the game.
@@ -69,14 +69,14 @@ Milestone Project 2.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Level selected | Choose button level | Game starts according to level selected | Works as expected |
+| Level selected | Choose difficulty level | Game starts according to level selected | [Works as expected](docs/assets/images/readme/Levels-page.png) |
 
 
 - As a player, I want to be able to check my progress during the game.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Game Page | Game start - Mid Game - End Game  | Clear progress indication throughout the game  | [Works as expected](/) |
+| Game Page | Game start - Mid Game - End Game  | Clear progress indication throughout the game  | [Works as expected](docs/assets/images/readme/progress-check.png) |
 
 
 - As a player, I want to be able to easily navigate back to the home page after completing the quiz.
@@ -92,7 +92,7 @@ Milestone Project 2.
 
 ## Future Features 
 
-- Include a timer, increasing the game interactivity and hopefully excitement, with scoring based on their speed and accuracy.
+- Include a timer, increasing the game interactivity and hopefully excitement, with scoring based on their speed.
 
 - I hope to implement a multiplayer scoreboard, along with players nicknames + pictures or icons.
 
@@ -158,7 +158,7 @@ Before game start:
   ![Game-Page](docs/assets/images/readme/Game-page.png)
 
 After game start:
-  ![Game-Page](docs/assets/images/readme/)
+  ![Game-Page](docs/assets/images/readme/game-start.png)
 
 
 # Known Bugs
@@ -166,9 +166,56 @@ After game start:
 # Technologies Used
 
 ## Languages Used
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
+
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 
 ## Frameworks Libraries and Programs
+- [Google Fonts](https://fonts.google.com/)
+  - Two fonts are imported from google fonts.
+  
+- [Font awesome](https://fontawesome.com/icons)
+  - I used icons from font awesome on buttons.
+
+- [Git](https://git-scm.com/)
+  - Git was used as a version control in the terminal.
+
+- [Github](https://github.com/)
+  - Github was used to create and store the project repository.
+
+- [Gitpod](https://gitpod.io/)
+  - Gitpod was used to create my files and where I wrote the code.
+
+- [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
+  - Google Chrome's Dev Tools were used while building the project to test responsiveness and for debugging.
+
+- [Am I Responsive?](http://ami.responsivedesign.is/) 
+  - To show the website image on a range of devices.
+
+- [Figma](https://www.figma.com/?fuid=)
+  - Figma was used to help create the inicial idea for the project.
+
+- [Image Resizer](https://imageresizer.com/)
+  - Image Resizer was used to resize the images, as well as change it's format.
+
+- [TinyPNG](https://tinypng.com/)
+  - TinyPNG was used to compress images, making it smaller to help with loading speed.
+
+- [Coolors](https://coolors.co/)
+  - Coolors was used to help generate the color palettes used on the project.
+
+- [Pexels](https://www.pexels.com/)
+  - Pexels was used to obtain images used on the project.
+
+
+- [tenor](https://tenor.com/)
+  - tenor was used to obtain the gif used on the project.
+
+- [Microsoft Bing](https://allears.net/)
+  - Microsoft Bing was used to obtain some images used on the project.
 
 
 # Deployment
@@ -179,7 +226,7 @@ Github Pages was used to deploy the live website. The instructions to achieve th
 3. Click on the Settings link.
 4. Click on the Pages link in the left hand side navigation bar.
 5. In the Source section, choose main from the drop down select branch menu. Select docs/ from the drop down select folder menu.
-6. Click Save. The live website site is now deployed at the URL showned at the top by Github pages.
+6. Click Save. The live website site is now deployed at the URL showed at the top by Github pages.
 
 #### How to Fork
 
@@ -237,7 +284,9 @@ To clone the DragonFly repository:
 
 ## Code
 
-* Logo Gradient: [Youtube](https://www.youtube.com/watch?v=f3mwKLXpOLk&list=PL4-IK0AVhVjMI45H5E9oE47wj-7AZLNnK)
+* Logo Gradient: [Youtube](https://www.youtube.com/watch?v=f3mwKLXpOLk&list=PL4-IK0AVhVjMI45H5E9oE47wj-7AZLNnK) - code used on site logo
+
+* 
 
 
 Please note this is a personal project. This website is purely for the sake of the developer's portfolio and not for public consumption.
