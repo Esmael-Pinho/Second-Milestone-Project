@@ -9,11 +9,13 @@
     --Amethyst: #B15DD5;
     --dark-red: #4c1111;
     --red: #e61a21;
-    --light-red: #e0655a;
+    --light-red: #e74536;
     --White: #fff;
     --dark-blue: #051417;
     --blue: #1a5eb3;
-    --gradient: linear-gradient(90deg, #ee6352, #800080, #ee6352);
+    --yellow: #f3cd10;
+    --green: #28e61a;
+    --gradient: linear-gradient(90deg, #800080, #e74536, #800080);
 }
 /* ---------------  /End Roots  -------------- */
 
@@ -49,8 +51,7 @@
 body {
     margin: 0px;
     font-family: "Ubuntu", 'Oswald', monospace;
-    background: var(--dark-blue);
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     display: grid;
     text-align: center;
 }
@@ -88,8 +89,13 @@ h1,h2 {
     -webkit-background-clip: text;
     color: transparent;
     text-decoration: none;
-
+    background-size: 190%;
+    transition: background-position 1s;
 }
+
+.pop:hover {
+    background-position: right;
+  }
 
 #overlay-content button {
     padding-top: 8rem;
@@ -129,6 +135,13 @@ h1,h2 {
     justify-content: center;
     text-transform: uppercase;
     cursor: url() 0 0, pointer;
+}
+
+.easy, .medium, .hard {
+    .btn {
+        background: var(--White);
+        color: var(--Amethyst);
+    }
 }
 
 video {
@@ -251,8 +264,9 @@ section span:before {
 
 /* ---------------   /Levels  -------------- */
 
-#gameLevels {
-    background: url("../images/logo1.png") center var(--dark-blue); 
+#gameLevels, #game-page {
+    background: linear-gradient(0deg, rgba(5, 20, 23, 1), rgba(5, 20, 23, 0.1)), url(../images/background-image.jpeg) center;
+    background-size: cover;
 }
 
 
@@ -270,7 +284,7 @@ section span:before {
 }
 
 .game-area {
-    background-color: var(--Amethyst);
+    background-color: var(--dark-blue);
     box-sizing: border-box;
     width: 900px;
     height: 75vh;
@@ -280,7 +294,7 @@ section span:before {
     margin-right: auto;
     padding: 1%;
     border-radius: 15px;
-    border: 5px solid #ee6352;
+    border: 5px solid var(--Amethyst);
 }
 
 .level-difficulty-area {
@@ -419,6 +433,7 @@ section span:before {
     font-family: "Ubuntu", 'Oswald', monospace;
     padding: 1rem 2rem;
     text-align: center;
+    /* color: var(--blue); */
 }
 
 #game-container {
@@ -502,7 +517,7 @@ button {
     color: #fff;
     background-color:  var(--dark-blue);
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem;
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
@@ -521,7 +536,7 @@ footer a {
 
 #socials a {
     font-size: 40px;
-    padding: 15px;
+    margin: 0 15px;
 }
 
 #facebook-icon:hover {

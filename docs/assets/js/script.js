@@ -15,6 +15,12 @@ $(document).ready(function() {
     window.location.href = "index.html";
   });
 
+  changeLevelsButtonsColor();
+
+  showDemoVideo();
+
+  linkButtonsToGame();
+
 
   // creates random colors for the bubbles 
   function randomColor() {
@@ -54,30 +60,72 @@ $(document).ready(function() {
 
 
   // shows demo video after clicking demo-button 
-  $("#demo-button").click(function() {
-    if (toggle) {
-      $("#demo-button").html("demo");
-    } else {
-      $("#demo-button").html("close"); // changes btn text to close
-    };
-    toggle = !toggle;
-    $("video").toggle();
-    $(".hide").toggle();
-  });
+  function showDemoVideo() {
+    $("#demo-button").click(function() {
+      if (toggle) {
+        $("#demo-button").html("demo");
+      } else {
+        $("#demo-button").html("close"); // changes btn text to close
+      };
+      toggle = !toggle;
+      $("video").toggle();
+      $(".hide").toggle();
+    });
+  }
+  
+
+  function changeLevelsButtonsColor() {
+    $('.easy').mouseover(function() {
+      $('.green').css('color', 'white');
+      $('.green').css('background-color', 'var(--green)');
+      $('.b-c1').css('border', '5px solid var(--green)')
+    });
+    $('.easy').mouseout(function () {
+      $('.green').css('color', '');
+      $('.green').css('background-color', '');
+      $('.b-c1').css('border', '');
+    });
+  
+    $('.medium').mouseover(function() {
+      $('.yellow').css('color', 'white');
+      $('.yellow').css('background-color', 'var(--yellow)');
+      $('.b-c2').css('border', '5px solid var(--yellow)')
+    });
+    $('.medium').mouseout(function () {
+      $('.yellow').css('color', '');
+      $('.yellow').css('background-color', '');
+      $('.b-c2').css('border', '');
+    });
+  
+    $('.hard').mouseover(function() {
+      $('.red').css('color', 'white');
+      $('.red').css('background-color', 'var(--red)');
+      $('.b-c3').css('border', '5px solid var(--red)')
+    });
+    $('.hard').mouseout(function () {
+      $('.red').css('color', '');
+      $('.red').css('background-color', '');
+      $('.b-c3').css('border', '');
+    });
+  }
+  
 
 
   // link buttons to game.html and attribute the level
-  $('#easy').on('click', () => {
-    window.location.href = 'game.html?level=easy';
-  });
-
-  $('#medium').on('click', () => {
-    window.location.href = 'game.html?level=medium';
-  });
-
-  $('#hard').on('click', () => {
-    window.location.href = 'game.html?level=hard';
-  });
+  function linkButtonsToGame() {
+    $('#easy').on('click', () => {
+      window.location.href = 'game.html?level=easy';
+    });
+  
+    $('#medium').on('click', () => {
+      window.location.href = 'game.html?level=medium';
+    });
+  
+    $('#hard').on('click', () => {
+      window.location.href = 'game.html?level=hard';
+    });
+  }
+  
 
 
   // alternates between sound on or off

@@ -199,6 +199,7 @@ To clone the DragonFly repository:
 ## Content
 * Logo image: [Microsoft Bing](https://www.pngkey.com/png/full/1-19017_bubbles-png.png)
 * Loading Gif: [tenor](https://tenor.com/en-GB/view/loading-load-circle-buffering-waiting-gif-15572297)
+* Background image: [Pexels](https://www.pexels.com/photo/drops-of-water-3391752/)
 
 ## Code
 
