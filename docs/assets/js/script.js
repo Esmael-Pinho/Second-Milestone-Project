@@ -15,6 +15,7 @@ $(document).ready(function() {
     window.location.href = "index.html";
   });
 
+  // call functions
   changeLevelsButtonsColor();
 
   showDemoVideo();
@@ -73,7 +74,7 @@ $(document).ready(function() {
     });
   }
   
-
+  // change buttons colors when button over and out
   function changeLevelsButtonsColor() {
     $('.easy').mouseover(function() {
       $('.green').css('color', 'white');

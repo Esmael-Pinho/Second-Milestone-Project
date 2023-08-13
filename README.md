@@ -126,6 +126,40 @@ The website consists of three pages home-page, level-page, game-page. The pages 
 
 ## All Pages Features
 
+### Home-Page
+ - This page shows an welcome message to the game, along with two button options: A Demo button and a Play button on a vibrant red. On the background, as an overlay it displays different bubbles from random colors.
+
+ ![Home-Page](docs/assets/images/readme/home-page.png)
+
+ | **Demo-Page** | **Play Button** |
+|-----------------------|------------|
+| The Demo button once clicked, hides the play button and adds a video demonstration of how to play the game as well as navigate the page. | The Play button once clicked will take the user to the Levels page |
+
+### Levels-Page
+ - This page requests the user to select a game difficulty level. Displaying a container with three buttons, easy, medium, hard, each representing a game level. The page also displays a home and a sound button, in case the player wants to return to the home-page, or simply toggle the sound off.
+
+ ![Levels-Page](docs/assets/images/readme/Levels-page.png)
+
+| **Home-btn** | **Sound-btn** | **Easy - Medium - Hard buttons**|
+|-----------------------|------------|--------------|
+| Takes the player back the the previews page(Home-Page). | Pause or play the sound | Takes the player to the next page (game page, according to the difficulty level chosen) |
+ 
+ The levels page also contains a footer containing social links and a feedback button which will open a modal allowing the player to send me an email message.  
+
+ | **Footer** | **Modal** |
+ |------------|-----------|
+ | ![Footer](docs/assets/images/readme/footer.png) | ![Modal](docs/assets/images/readme/modal.png) |
+
+
+ ### Game-Page
+  - 
+
+Before game start:
+  ![Game-Page](docs/assets/images/readme/Game-page.png)
+
+After game start:
+  ![Game-Page](docs/assets/images/readme/)
+
 
 # Known Bugs
 

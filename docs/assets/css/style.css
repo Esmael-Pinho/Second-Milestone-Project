@@ -433,7 +433,7 @@ section span:before {
     font-family: "Ubuntu", 'Oswald', monospace;
     padding: 1rem 2rem;
     text-align: center;
-    /* color: var(--blue); */
+    color: #ffffff;
 }
 
 #game-container {
@@ -565,8 +565,8 @@ dialog {
     transform: translate(-50%, -50%);
     background: var(--Cherry-blossom-pink);
     color: #fff;
-    box-shadow: 0px 0px 4px 2px var(--Persian-pink);
-    border: 2px solid var(--Persian-rose);
+    box-shadow: 0px 0px 4px 2px var(--Amethyst);
+    border: 2px solid var(--Amethyst);
     border-radius: 15px;
     padding: 0;
     margin: 0;
@@ -592,7 +592,7 @@ dialog .close-btn {
 
 dialog .close-btn:hover, dialog .close-btn:active {
     color: var(--White);
-    background-color: var(--purple);
+    background-color: var(--Amethyst);
     transition: all .25s;
 }
 
