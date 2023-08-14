@@ -15,6 +15,14 @@
         <!-- Link the Google Fonts stylesheet -->
         <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Oswald:wght@500&family=Roboto+Mono&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
+        <!-- Connecting EmailJs -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init("zjb6d0aI6Bcvb6s_C");
+            })();
+        </script>
+
         <link rel="icon" type="image/x-icon" href="assets/images/logo1.png">
         <title>Popping - Lets's Pop </title>
         
@@ -111,11 +119,11 @@
                         <div id="contact-container">
                             <h2>Get in Touch </h2>
                             <p>Please use this form to provide <br> feedback or report any bugs you <br> find.</p>
-                            <form id="contact-form">
+                            <form id="contact-form" onsubmit="return sendEmail(this);">
                                 <label for="name">NAME</label>
-                                <input type="text" id="name" name="user_name" aria-label="Please enter your name" placeholder=" John Smith" required>
+                                <input type="text" id="name" name="name" aria-label="Please enter your name" placeholder=" John Smith" required>
                                 <label for="email">EMAIL</label>
-                                <input type="email" id="email" name="user_email" aria-label="Please enter your email" placeholder=" popping@gmail.com" required>
+                                <input type="email" id="email" name="email" aria-label="Please enter your email" placeholder=" popping@gmail.com" required>
                                 <label for="message">YOUR MESSAGE</label>
                                 <textarea id="message" name="message" aria-label="Please provide message" placeholder=" I have a few things to say about Popping..."
                                     required></textarea>

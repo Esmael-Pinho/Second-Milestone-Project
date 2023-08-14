@@ -289,7 +289,7 @@ To clone the DragonFly repository:
 
 * Logo Gradient: [Youtube](https://www.youtube.com/watch?v=f3mwKLXpOLk&list=PL4-IK0AVhVjMI45H5E9oE47wj-7AZLNnK) - code used on site logo
 
-* 
+* Email.js: [Code Institute emailJs walkthrough project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/e4710f80cdf34bffbd607bc102482d5c/?child=first)
 
 
 Please note this is a personal project. This website is purely for the sake of the developer's portfolio and not for public consumption.
