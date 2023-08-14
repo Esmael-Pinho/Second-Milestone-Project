@@ -196,7 +196,7 @@ After game start:
   - To show the website image on a range of devices.
 
 - [Figma](https://www.figma.com/?fuid=)
-  - Figma was used to help create the inicial idea for the project.
+  - Figma was used to help create the initial idea for the project.
 
 - [Image Resizer](https://imageresizer.com/)
   - Image Resizer was used to resize the images, as well as change it's format.
@@ -210,9 +210,11 @@ After game start:
 - [Pexels](https://www.pexels.com/)
   - Pexels was used to obtain images used on the project.
 
-
 - [tenor](https://tenor.com/)
   - tenor was used to obtain the gif used on the project.
+
+- [FreeConverter](https://www.freeconvert.com/mp3-converter)
+  - FreeConverter was used to convert the sound used on the project to mp3.
 
 - [Microsoft Bing](https://allears.net/)
   - Microsoft Bing was used to obtain some images used on the project.
@@ -279,8 +281,9 @@ To clone the DragonFly repository:
 
 ## Content
 * Logo image: [Microsoft Bing](https://www.pngkey.com/png/full/1-19017_bubbles-png.png)
-* Loading Gif: [tenor](https://tenor.com/en-GB/view/loading-load-circle-buffering-waiting-gif-15572297)
+* Loading Gif: [Tenor](https://tenor.com/en-GB/view/loading-load-circle-buffering-waiting-gif-15572297)
 * Background image: [Pexels](https://www.pexels.com/photo/drops-of-water-3391752/)
+* Sound Effects: [Mixkit](https://mixkit.co/free-sound-effects/game/)
 
 ## Code
 

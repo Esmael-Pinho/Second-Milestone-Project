@@ -1,8 +1,11 @@
 
-
 $(document).ready(function() {
 
-  var toggle = false;
+  // Variables
+  let toggle = true;
+  const btnSound = document.getElementById('btn-sound');
+  let isSoundMuted = false;
+
   
 
   // play button links to levels page
@@ -16,11 +19,11 @@ $(document).ready(function() {
   });
 
   // call functions
+  buttonsHover();
   changeLevelsButtonsColor();
-
   showDemoVideo();
-
   linkButtonsToGame();
+  playPause();
 
 
   // creates random colors for the bubbles 
@@ -59,6 +62,15 @@ $(document).ready(function() {
 
   setInterval(Bubbles,100);
 
+  // adds sound to button on hovered
+  function buttonsHover() {
+    $('.btn, .home-btn, .sound-btn, .pop, .close, .message-btn, .close-btn, #start-btn, #facebook-icon, #twitter-icon, #youtube-icon, #instagram-icon').on('mouseenter', function() {
+      if (!isSoundMuted) {
+        btnSound.volume = 0.6; // Adjust the volume level
+        btnSound.play();
+      }
+    });
+  }
 
   // shows demo video after clicking demo-button 
   function showDemoVideo() {
@@ -73,6 +85,12 @@ $(document).ready(function() {
       $(".hide").toggle();
     });
   }
+
+  const gameSound = document.getElementById('game-sound');
+  gameSound.volume = 0.5; // Set volume to half
+
+  
+
   
   // change buttons colors when button over and out
   function changeLevelsButtonsColor() {
@@ -128,16 +146,22 @@ $(document).ready(function() {
   }
   
 
-
+  
   // alternates between sound on or off
-  $(".sound-btn").click(function() {
-    if (toggle) {
-      $(".sound-btn").html(`<i class="fa-solid fa-volume-high"></i>`);
-    } else {
-      $(".sound-btn").html(`<i class="fa-solid fa-volume-xmark"></i>`);
-    }
-    toggle = !toggle;
-  });
+  function playPause() {
+    $(".sound-btn").click(function() {
+      const gameSound = document.getElementById('game-sound');
+      
+      if (toggle && !gameSound.paused) {
+        $(".sound-btn").html(`<i class="fa-solid fa-volume-xmark"></i>`);
+        gameSound.pause(); //pause sound
+      } else {
+        $(".sound-btn").html(`<i class="fa-solid fa-volume-high"></i>`);
+        gameSound.play(); // play
+      }
+      toggle = !toggle;
+    });
+  };
 
 
   // modal open after click feedback button
