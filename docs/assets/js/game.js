@@ -8,7 +8,7 @@ $(document).ready(function() {
     // Variables for the game
     let questions = [];
     let usedQuestions = [];
-
+    const gameSound = document.getElementById('game-sound');
 
     // Initially hide the scoreboard and the questions
     $('#scoreboard').hide();
@@ -70,6 +70,7 @@ $(document).ready(function() {
         $('#scoreboard').show();
         $('#scoreboard').css('display', 'flex');
         $('.container').css('margin-top', 'auto');
+        gameSound.volume = 0.2;
       //   $('#restart-btn').hide();
       });
     };

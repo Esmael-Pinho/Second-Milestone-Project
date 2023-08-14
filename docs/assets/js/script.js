@@ -86,11 +86,7 @@ $(document).ready(function() {
     });
   }
 
-  const gameSound = document.getElementById('game-sound');
-  gameSound.volume = 0.5; // Set volume to half
-
   
-
   
   // change buttons colors when button over and out
   function changeLevelsButtonsColor() {
@@ -145,7 +141,8 @@ $(document).ready(function() {
     });
   }
   
-
+  const gameSound = document.getElementById('game-sound');
+  gameSound.volume = 0.4; // Set volume to half
   
   // alternates between sound on or off
   function playPause() {
