@@ -8,6 +8,11 @@ $(document).ready(function() {
     // Variables for the game
     let questions = [];
     let usedQuestions = [];
+
+
+    // Initially hide the scoreboard and the questions
+    $('#scoreboard').hide();
+    $('.container').css('margin-top', '6.59rem', 'margin-bottom', '0');
   
     // Load questions from JSON file
     $.getJSON('./assets/js/questions.json', data => {
@@ -15,6 +20,10 @@ $(document).ready(function() {
     }).fail((jqxhr, textStatus, error) => {
       console.error("Error fetching questions:", error);
     });
+
+    // call function
+    changeQuestionColor();
+    showScoreboard();
   
     // Display a random question by level
     function displayRandomQuestion(level) {
@@ -40,20 +49,33 @@ $(document).ready(function() {
   
     // testing if questions change by action
     $('#start-btn').on('click', () => {
-        displayRandomQuestion(level);
-      });
+      displayRandomQuestion(level);
+    });
+
+    // Change the color of #question according to the level
+    function changeQuestionColor() {
+      if (level === 'easy') {
+        $('#question').css('color', 'var(--green)');
+      } else if (level === 'medium') {
+        $('#question').css('color', 'var(--yellow)');
+      } else if (level === 'hard') {
+        $('#question').css('color', 'var(--red)');
+      }
+    }
+  
   
     // Show the scoreboard and questions when the button is clicked, and hide start btn
-    $('#start-btn').click(function() {
-      $('#scoreboard').show();
-      $('#scoreboard').css('display', 'flex');
-      $('.container').css('margin-top', 'auto');
-    //   $('#restart-btn').hide();
-    });
-  
-    // Initially hide the scoreboard and the questions
-    $('#scoreboard').hide();
-    $('.container').css('margin-top', '6.59rem', 'margin-bottom', '0');
+    function showScoreboard() {
+      $('#start-btn').click(function() {
+        $('#scoreboard').show();
+        $('#scoreboard').css('display', 'flex');
+        $('.container').css('margin-top', 'auto');
+      //   $('#restart-btn').hide();
+      });
+    };
+    
+
+
 });
   
   

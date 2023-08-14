@@ -79,7 +79,7 @@ $(document).ready(function() {
     $('.easy').mouseover(function() {
       $('.green').css('color', 'white');
       $('.green').css('background-color', 'var(--green)');
-      $('.b-c1').css('border', '5px solid var(--green)')
+      $('.b-c1').css('border', '5px solid var(--green)');
     });
     $('.easy').mouseout(function () {
       $('.green').css('color', '');
@@ -90,7 +90,7 @@ $(document).ready(function() {
     $('.medium').mouseover(function() {
       $('.yellow').css('color', 'white');
       $('.yellow').css('background-color', 'var(--yellow)');
-      $('.b-c2').css('border', '5px solid var(--yellow)')
+      $('.b-c2').css('border', '5px solid var(--yellow)');
     });
     $('.medium').mouseout(function () {
       $('.yellow').css('color', '');
@@ -101,7 +101,7 @@ $(document).ready(function() {
     $('.hard').mouseover(function() {
       $('.red').css('color', 'white');
       $('.red').css('background-color', 'var(--red)');
-      $('.b-c3').css('border', '5px solid var(--red)')
+      $('.b-c3').css('border', '5px solid var(--red)');
     });
     $('.hard').mouseout(function () {
       $('.red').css('color', '');
