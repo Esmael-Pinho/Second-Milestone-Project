@@ -141,7 +141,7 @@ $(document).ready(function() {
     });
   }
   
-  const gameSound = document.getElementById('game-sound');
+  const gameSound = $('#game-sound')[0];
   gameSound.volume = 0.4; // Set volume to half
   
   // alternates between sound on or off
