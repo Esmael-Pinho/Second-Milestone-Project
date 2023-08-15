@@ -673,3 +673,45 @@ dialog p {
 /***** /End Modal *****/
 
 /* ---------------   /End Footer -------------- */
+
+
+/* --------------- 404 Page -------------- */
+
+.page-404 {
+    overflow: hidden;
+}
+
+#container-404 {
+    margin: 10rem auto;
+}
+
+#error-404, #message-404 {
+    margin: 30px auto;
+}
+
+#error-404 {
+    font-size: 50px;
+    color: var(--red);
+}
+
+#message-404 {
+    color: var(--White);
+    font-family: "Ubuntu", Helvetica, sans-serif;
+}
+
+#btn-404 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--Persian-rose);
+    cursor: pointer;
+}
+
+#btn-404:hover {
+    border: 2px solid var(--blue);
+}
+
+/* ---------------   /End 404 Page -------------- */

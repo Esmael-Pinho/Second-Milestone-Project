@@ -16,6 +16,7 @@ Milestone Project 2.
 
 [Click me for the project repository.]()
 
+
 # Table of Contents
 
 ## Contents
@@ -72,7 +73,7 @@ Milestone Project 2.
 | Level selected | Choose difficulty level | Game starts according to level selected | [Works as expected](docs/assets/images/readme/Levels-page.png) |
 
 
-- As a player, I want to be able to check my progress during the game.
+- As a player, I want to be able to check my progress, the correct and incorrect answers ans score during the game.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
@@ -154,11 +155,18 @@ The website consists of three pages home-page, level-page, game-page. The pages 
  ### Game-Page
   - 
 
+
 Before game start:
-  ![Game-Page](docs/assets/images/readme/Game-page.png)
+  ![Game-Page](docs/assets/images/readme/Before-game-start.png)
 
 After game start:
-  ![Game-Page](docs/assets/images/readme/game-start.png)
+  ![Game-Page](docs/assets/images/readme/)
+
+
+  ### 404-Page
+  - This page shows Error 404 in case there's been some error pulling the questions. And asks the user to go back to the home-page by clicking the button in order to try again.
+
+  ![404-Page](docs/assets/images/readme/Error-404-Page.png)
 
 
 # Known Bugs
@@ -233,7 +241,7 @@ Github Pages was used to deploy the live website. The instructions to achieve th
 #### How to Fork
 
 Forks are used to propose changes to someone else's project or to use someone else's project as a starting point for your own idea. By forking the GitHub Repository you make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository.
-To fork the DragonFly repository:
+To fork the Popping repository:
 
 1. Log in (or sign up) to Github.
 2. Go to the repository for this project, .
@@ -242,7 +250,7 @@ To fork the DragonFly repository:
 
 #### How to Clone
 
-To clone the DragonFly repository:
+To clone the Popping repository:
 
 1. Log in (or sign up) to GitHub.
 2. Go to the repository for this project, .
@@ -255,9 +263,9 @@ To clone the DragonFly repository:
 ### W3C Validator
  * Initial Testing
 
-| **Overlay-Home-Page** | **Levels** | **Game** |
-|-----------------------|------------|----------|
-| [Home-Page](/docs/assets/images/readme/overlay-html.png) | [Levels](/docs/assets/images/readme/levels.html.png) | [Game-Page]() |
+| **Overlay-Home-Page** | **Levels** | **Game** | **404-Page** |
+|-----------------------|------------|----------|------|
+| [Home-Page](/docs/assets/images/readme/overlay-html.png) | [Levels](/docs/assets/images/readme/levels.html.png) | [Game-Page]() | [404-Page]() |
 
 
 * Final Testing

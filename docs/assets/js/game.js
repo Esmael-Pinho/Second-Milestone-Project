@@ -19,6 +19,7 @@ $(document).ready(function() {
       questions = data;
     }).fail((jqxhr, textStatus, error) => {
       console.error("Error fetching questions:", error);
+      window.location.replace("./404.html");
     });
 
     // call function

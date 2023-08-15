@@ -2,9 +2,8 @@
 const originalFormContent = $('#contact-container').html();
 showForm();
 
-function sendEmail(contactForm) {
+function sendEmail(contactForm) { 
     
-
     emailjs.send("gmail", "pinho", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.email.value,
@@ -25,16 +24,16 @@ function sendEmail(contactForm) {
 
 // message to display after Feedback/Message sent
 function showThankYou() {
-    let messageArea = document.getElementById('contact-container');
+    let message = document.getElementById('contact-container');
     let thankyouMessage = `
     <h2>YOUR MESSAGE HAS BEEN SENT</h2>
     <br>
     <p>Thank you for the Feedback | Message<br>I appreciate your contribution and will be in touch if necessary.<br>Have a good day!</p>`;
 
-    messageArea.innerHTML = thankyouMessage;
+    message.innerHTML = thankyouMessage;
 };
 
-// Function to show form again after close btn clicked
+// Function to show form again after close-btn clicked
 function showForm() {
     $('.close-btn').click(function() {
         $('#contact-container').html(originalFormContent);
