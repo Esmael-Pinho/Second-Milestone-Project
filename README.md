@@ -1,7 +1,7 @@
 
 Milestone Project 2.
 
-# ![Popping Logo](/docs/assets/images/logo.png) 
+# ![Popping Logo](docs/assets/images/readme/logo.png) 
 
 
 
@@ -205,7 +205,7 @@ After game start:
 - [Am I Responsive?](http://ami.responsivedesign.is/) 
   - To show the website image on a range of devices.
 
-- [Figma](https://www.figma.com/?fuid=)
+- [Lucid](https://lucid.co/)
   - Figma was used to help create the initial idea for the project.
 
 - [Image Resizer](https://imageresizer.com/)
