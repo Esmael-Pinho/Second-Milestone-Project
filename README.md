@@ -122,6 +122,8 @@ The website consists of three pages home-page, level-page, game-page. The pages 
 
 ## Wireframes
 
+[wireframes](docs/assets/images/readme/Wireframe-Popping.png)
+
 
 # Features
 
@@ -261,18 +263,27 @@ To clone the Popping repository:
 # Testing
 
 ### W3C Validator
- * Initial Testing
 
-| **Overlay-Home-Page** | **Levels** | **Game** | **404-Page** |
-|-----------------------|------------|----------|------|
-| [Home-Page](/docs/assets/images/readme/overlay-html.png) | [Levels](/docs/assets/images/readme/levels.html.png) | [Game-Page]() | [404-Page]() |
+* Initial Testing
+
+| **Overlay-Home-Page** | **Levels** | **Game** | **404-Page** | **Style.css** |
+|-----------------------|------------|----------|--------------|---------------|
+| [Home-Page](/docs/assets/images/readme/home-page-initial-test.png) | [Levels](/docs/assets/images/readme/levels-page-initial-test.png) | [Game-Page](docs/assets/images/readme/Game-page-initial-test.png) | [404-Page](docs/assets/images/readme/Page-404-test.png) | [Css](docs/assets/images/readme/Css-initial-test.png) |
+|* Warning about using aria-label on div |* Unnecessary use of type attribute for script javascript, and aria-labelledby for empty content |* Duplicated ids and empty heading 'h2' |* No issues found |* No issues found |
+
+
+
+
 
 
 * Final Testing
 
-| **Overlay-Home-Page** | **Levels** | **Game** |
-|-----------------------|------------|----------|
-| [Home-Page](/) | [Levels](/) | [Game-Page]() |
+| **Overlay-Home-Page** | **Levels** | **Game** | **404-Page** | **Style.css** |
+|-----------------------|------------|----------|--------------|---------------|
+| [Home-Page](/docs/assets/images/readme/home-page-final-test.png) | [Levels](/docs/assets/images/readme/Levels-page-final-test.png) | [Game-Page]() | [404-Page](docs/assets/images/readme/Page-404-test.png) | [Css]() |
+|* No issues found |* No issues found | |* No issues found | |
+
+
 
 
 ### Lighthouse
@@ -282,6 +293,7 @@ To clone the Popping repository:
 
 ### Full Testing
 
+To fully test my website I performed the following testing using a number of browsers (Chrome, Edge, Firefox, Opera).
 
 
 
