@@ -2,7 +2,10 @@
 const originalFormContent = $('#contact-container').html();
 showForm();
 
+
 function sendEmail(contactForm) { 
+    const feedbackSubmit = document.getElementById("contact-btn");
+    feedbackSubmit.value = 'Sending...';  // extra feedback for the user
     
     emailjs.send("gmail", "pinho", {
         "from_name": contactForm.name.value,
@@ -12,6 +15,7 @@ function sendEmail(contactForm) {
     .then(
         function(response) {
             console.log("SUCCESS", response);
+            feedbackSubmit.value = 'Msg Sent';
             showThankYou();
         },
         function(error) {
@@ -28,7 +32,7 @@ function showThankYou() {
     let thankyouMessage = `
     <h2>YOUR MESSAGE HAS BEEN SENT</h2>
     <br>
-    <p>Thank you for the Feedback | Message<br>I appreciate your contribution and will be in touch if necessary.<br>Have a good day!</p>`;
+    <p>Thank you for the Feedback | Message<br>I appreciate your contribution and will be in touch if necessary.<br>Have a good day! 🤗</p>`;
 
     message.innerHTML = thankyouMessage;
 };
