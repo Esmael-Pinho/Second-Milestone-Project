@@ -48,11 +48,6 @@ $(document).ready(function() {
       usedQuestions.push(question);
       $('#question').text(question.question);
     }
-  
-    // testing if questions change by action
-    $('#start-btn').on('click', () => {
-      displayRandomQuestion(level);
-    });
 
     // Change the color of #question according to the level
     function changeQuestionColor() {
@@ -68,12 +63,17 @@ $(document).ready(function() {
   
     // Show the scoreboard and questions when the button is clicked, and hide start btn
     function showScoreboard() {
-      $('#start-btn').click(function() {
-        $('#scoreboard').show();
-        $('#scoreboard').css('display', 'flex');
-        $('.container').css('margin-top', 'auto');
-        gameSound.volume = 0.2;
-      //   $('#restart-btn').hide();
+      $("#start-btn").click(function() {
+        // $("#start-btn").hide();
+        $(".loading-gif").show(); // Show the gif element
+        setTimeout(function() {
+          $(".loading-gif").hide(); // Hide the gif element 
+          displayRandomQuestion(level);
+          $("#scoreboard").show();
+          $("#scoreboard").css("display", "flex");
+          $(".container").css("margin-top", "auto");
+          gameSound.volume = 0.2;
+        }, 400);
       });
     }
     

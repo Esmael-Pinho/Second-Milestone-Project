@@ -152,6 +152,14 @@ video {
     border: 3px solid var(--White);
 }
 
+.loading-gif {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+} 
 
 .button .btn:before {
     content: '';

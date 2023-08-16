@@ -76,6 +76,7 @@ $(document).ready(function() {
   // shows demo video after clicking demo-button 
   function showDemoVideo() {
     $("#demo-button").click(function() {
+      $('#loading-gif').show();
       if (toggle) {
         $("#demo-button").html("close");
       } else {
@@ -86,8 +87,6 @@ $(document).ready(function() {
       $(".hide").toggle();
     });
   }
-
-  
   
   // change buttons colors when button over and out
   function changeLevelsButtonsColor() {
