@@ -308,6 +308,14 @@ Final Testing:
 ### Full Testing
 
 To fully test my website I performed the following testing using a number of browsers (Chrome, Edge, Firefox, Opera).
+- All pages:
+
+| Feature | Expected Result | Testing Performed | Actual Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| The Sites Logo | Clicking on the logo link directs the user back to the home page | Clicked title | Home page loads | Pass |
+| Fav icon | The fav icon shows when visiting the page | Visited page | The fav icon correctly displays | Pass |
+| Custom cursor | The cursor displays when hovering over clickable content | Hover over buttons and logo | Bubble cursor displays | Pass |
+| Hover button effect | The buttons display extra borders when hovering over. Level buttons change colors and home and sound btns display a blue border| Hover over the buttons | The colour changes as expected when the mouse is on the buttons | Pass |
 
 
 
