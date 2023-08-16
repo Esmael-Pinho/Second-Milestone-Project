@@ -77,9 +77,9 @@ $(document).ready(function() {
   function showDemoVideo() {
     $("#demo-button").click(function() {
       if (toggle) {
-        $("#demo-button").html("demo");
+        $("#demo-button").html("close");
       } else {
-        $("#demo-button").html("close"); // changes btn text to close
+        $("#demo-button").html("demo"); // changes btn text to close
       }
       toggle = !toggle;
       $("video").toggle();

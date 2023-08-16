@@ -273,10 +273,6 @@ To clone the Popping repository:
 |* Warning about using aria-label on div |* Unnecessary use of type attribute for script javascript, and aria-labelledby for empty content |* Duplicated ids and empty heading 'h2' |* No issues found |* No issues found |
 
 
-
-
-
-
 * Final Testing
 
 | **Overlay-Home-Page** | **Levels** | **Game** | **404-Page** | **Style.css** |
@@ -285,9 +281,7 @@ To clone the Popping repository:
 |* No issues found |* No issues found | |* No issues found | |
 
 
-
-
-### Lighthouse
+### JShint
 
 | **Script.js** | **Email.js** | **Game.js** |
 |---------------|--------------|-------------|
@@ -295,6 +289,20 @@ To clone the Popping repository:
 |* Warning: 2 undefined variables -$- and innerwidth . It kept saying that the jquery symbol was undefined, I did search as to why that could be but cound't find any reason. |* Warnings: 2 undefined variables -$- and emailjs, and 1 unused sendEmail, but sendEmail is link on the html page. |*  |
 
 
+### Lighthouse
+Initial Testing:
+
+| **Overlay-Home-Page** | **Levels** | **Game** | **404-Page** |
+|-----------------------|------------|----------|--------------|
+| [Home-Page](/docs/assets/images/readme/LightHouse/home-page-lighthouse-test.png) | [Levels](/docs/assets/images/readme/LightHouse/levels-page-lighthouse-test.png) | [Game-Page](docs/assets/images/readme/LightHouse/game-before-start-lighthouse-test.png) | [404-Page](docs/assets/images/readme/LightHouse/page-404-lighthouse-test.png) |
+|* No main issues.Just the fact that I have some extensions that seem to be affecting the SEO. - Final test to be on a incognito mode, to see if the isse continues. |* Extensions issues |* Extensions issues |* Extensions issues |
+
+Final Testing:
+
+| **Overlay-Home-Page** | **Levels** | **Game** | **404-Page** |
+|-----------------------|------------|----------|--------------|
+| [Home-Page](/docs/assets/images/readme/LightHouse/) | [Levels](/docs/assets/images/readme/LightHouse/) | [Game-Page](docs/assets/images/readme/LightHouse/) | [404-Page](docs/assets/images/readme/LightHouse/) |
+|* Still to test |* Still to test |* Still to test |* Still to test |
 
 
 ### Full Testing
