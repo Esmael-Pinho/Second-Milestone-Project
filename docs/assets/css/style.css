@@ -81,7 +81,6 @@ h1,h2 {
 
 .pop {
     font-size: 56px;
-    cursor: pointer;
 }
 
 .pop, a {
@@ -120,6 +119,10 @@ h1,h2 {
     height: 130px;
 }
 
+.btn, .pop, .message-btn, .sound-btn, .home-btn, #btn-404, #start-btn {
+    cursor: url(../images/logo.png), pointer;
+}
+
 .btn {
     width: 70%;
     height: 70%;
@@ -134,7 +137,6 @@ h1,h2 {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    cursor: url() 0 0, pointer;
 }
 
 .easy, .medium, .hard {
@@ -496,7 +498,6 @@ button {
     height: 75px;
     background-color: var(--White);
     border-radius: 50%;
-    cursor: pointer;
     font-weight: bold;
     border: 2px solid var(--red);
 }
@@ -508,7 +509,6 @@ button {
 .sound-btn, .home-btn {
     font-size: 45px;
     color: var(--blue);
-    cursor: pointer;
 }
 
 /* ---------------   /End Game  -------------- */
@@ -589,7 +589,6 @@ dialog .close-btn {
     border: none;
     background-color: #fff;
     margin-bottom: 1rem;
-    cursor:pointer;
 }
 
 dialog .close-btn:hover, dialog .close-btn:active {
@@ -628,7 +627,6 @@ dialog p {
     font-size: 18px;
     font-weight: bold;
     margin: auto auto 1rem;
-    cursor: pointer;
 }
 
 .message-btn:hover {
@@ -682,7 +680,7 @@ dialog p {
 }
 
 #container-404 {
-    margin: 10rem auto;
+    margin: 10rem auto .5rem auto;
 }
 
 #error-404, #message-404 {
@@ -707,7 +705,6 @@ dialog p {
     height: 80px;
     border-radius: 50%;
     background-color: var(--Persian-rose);
-    cursor: pointer;
 }
 
 #btn-404:hover {

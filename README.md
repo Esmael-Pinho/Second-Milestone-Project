@@ -307,15 +307,56 @@ Final Testing:
 
 ### Full Testing
 
-To fully test my website I performed the following testing using a number of browsers (Chrome, Edge, Firefox, Opera).
+To fully test my website I performed the following testings using a number of browsers (Chrome, Edge, Firefox, Opera).
+
 - All pages:
 
-| Feature | Expected Result | Testing Performed | Actual Result | Pass/Fail |
-| --- | --- | --- | --- | --- |
-| The Sites Logo | Clicking on the logo link directs the user back to the home page | Clicked title | Home page loads | Pass |
-| Fav icon | The fav icon shows when visiting the page | Visited page | The fav icon correctly displays | Pass |
-| Custom cursor | The cursor displays when hovering over clickable content | Hover over buttons and logo | Bubble cursor displays | Pass |
-| Hover button effect | The buttons display extra borders when hovering over. Level buttons change colors and home and sound btns display a blue border| Hover over the buttons | The colour changes as expected when the mouse is on the buttons | Pass |
+| Feature | Test Performed | Expected Result | Pass/Fail |
+|---------|----------------|-----------------|-----------|
+| The Sites Logo | Clicking on the logo link directs the user back to the home page | Home page loads | Pass |
+| Links | Clicking the on the buttons and social links on the footer should direct the user to the desired location | User directed to a next page, or a new page, or sound off/on | Pass |
+| Custom cursor | The cursor displays when hovering over clickable content | Bubble cursor displays | Pass |
+| Hover button effect | Hovering over btns and links or logo | The logo when hovered changes the color. The btn display extra borders when hovering over. Level buttons change colors and home and sound btns display a blue border | Pass |
+
+- Home Page: 
+
+| Feature | Test Performed | Expected Result | Pass/Fail |
+|---------|----------------|-----------------|-----------|
+| Demo Button | Clicked demo btn | Play btn disappears and displays a container with a video. The demo btn text turns to close.| Pass |
+| Close Button | Clicked close btn | Play btn shows back again and hides container with video demo  | Pass |
+| Play Button | Clicked play btn | User is directed to Levels page | Pass |
+
+
+- Levels Page: 
+
+| Feature | Test Performed | Expected Result | Pass/Fail |
+|---------|----------------|-----------------|-----------|
+| Logo Button | Clicked Logo | Clicking on the logo link directs the user back to the home page | Home page loads | Pass |
+| Home Button | Clicked home btn | Clicking on the logo link directs the user back to the home page | Home page loads | Pass |
+| Easy Button | Clicked level easy btn | User is directed to Game page on easy difficulty mode, questions color green. | Pass |
+| Medium Button | Clicked medium btn | User is directed to Game page on medium difficulty mode, questions color yellow.| Pass |
+| Hard Button | Clicked hard btn | User is directed to Game page on hard difficulty mode, questions color red| Pass |
+| Sound Button | Clicked sound btn | User can toggle between sound on or off, displaying the sound on icon or sound off | Pass |
+| Feedback Button | Clicked feedback/message btn | Modal opens up that allows the user to fill in a form with, name, email, and a message, that can then be submitted, via the submit btn to send a message | Pass |
+
+- Game Page: 
+
+| Feature | Test Performed | Expected Result | Pass/Fail |
+|---------|----------------|-----------------|-----------|
+| Logo Button | Clicked Logo | Clicking on the logo link directs the user back to the home page | Home page loads | Pass |
+| Home Button | Clicked home btn | Clicking on the logo link directs the user back to the home page | Home page loads | Pass |
+| Start Button | Clicked start btn | Game starts, displays the scoreboard, along with the questions. Start button hides| Pass |
+| Gameplay | Clicked start btn | Questions displays, user answers correctly and the score, along with the correct answers will increase, score by 10, correct answers by 1, as well as the question counter, until 10. If answered incorrectly incorrect answers will the increment by 1. On a total of 10 questions game ends. | Pass |
+| Sound Button | Clicked sound btn | User can toggle between sound on or off, displaying the sound on icon or sound off | Pass |
+| Feedback Button | Clicked feedback/message btn | Modal opens up that allows the user to fill in a form with, name, email, and a message, that can then be submitted, via the submit btn to send a message | Pass |
+
+- 404 Page: 
+
+| Feature | Test Performed | Expected Result | Pass/Fail |
+|---------|----------------|-----------------|-----------|
+| Logo | Clicked logo | The user is directed to the home page (to try again, that will probably fix the issue) | Pass |
+| Home Button | Clicked home btn | User is directed to home page | Pass |
+| Feedback Button | Clicked feedback/message btn | Modal opens up that allows the user to fill in a form with, name, email, and a message, that can then be submitted, via the submit btn to send a message | Pass |
 
 
 
@@ -328,6 +369,8 @@ To fully test my website I performed the following testing using a number of bro
 * Sound Effects: [Mixkit](https://mixkit.co/free-sound-effects/game/)
 
 ## Code
+
+* Home Page Overlay Bubbles: [Youtube]()
 
 * Logo Gradient: [Youtube](https://www.youtube.com/watch?v=f3mwKLXpOLk&list=PL4-IK0AVhVjMI45H5E9oE47wj-7AZLNnK) - code used on site logo
 
