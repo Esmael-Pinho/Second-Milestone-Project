@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 $(document).ready(function() {
 
 
@@ -74,7 +75,7 @@ $(document).ready(function() {
         gameSound.volume = 0.2;
       //   $('#restart-btn').hide();
       });
-    };
+    }
     
 
 

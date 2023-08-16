@@ -107,7 +107,7 @@ The website consists of three pages home-page, level-page, game-page. The pages 
 
 
 ## Color Scheme
-![Popping](docs/assets/images/readme/milestone-project-2.png)
+![Popping](docs/assets/images/readme/Colors/milestone-project-2.png)
 
   * The website uses a palette of colors generated using the [Coolors]("https://coolors.co/") website. 
   It uses a simple color scheme of Persian-pink and rose , Cherry-blossom and Amethyst with pops of dark-blue and red, along with the primary color.
@@ -122,7 +122,7 @@ The website consists of three pages home-page, level-page, game-page. The pages 
 
 ## Wireframes
 
-[wireframes](docs/assets/images/readme/Wireframe-Popping.png)
+[wireframes](docs/assets/images/readme/wireframe/Wireframe-Popping.png)
 
 
 # Features
@@ -172,6 +172,7 @@ After game start:
 
 
 # Known Bugs
+I've had no know buggs on the project so far
 
 # Technologies Used
 
@@ -287,6 +288,11 @@ To clone the Popping repository:
 
 
 ### Lighthouse
+
+| **Script.js** | **Email.js** | **Game.js** |
+|---------------|--------------|-------------|
+| [Script test](/docs/assets/images/readme/Jshint-test/Script-js-test.png) | [Email test](/docs/assets/images/readme/Jshint-test/email.js-test.png) | [Game.js test]() |
+|* Warning: 2 undefined variables -$- and innerwidth . It kept saying that the jquery symbol was undefined, I did search as to why that could be but cound't find any reason. |* Warnings: 2 undefined variables -$- and emailjs, and 1 unused sendEmail, but sendEmail is link on the html page. |*  |
 
 
 

@@ -1,4 +1,4 @@
-
+/*jshint esversion: 6 */
 $(document).ready(function() {
 
   // Variables
@@ -44,23 +44,24 @@ $(document).ready(function() {
   function Bubbles() {
     const section = $('section');
     const createBubble = $('<span></span>');
-    var size = Math.random() * 90;
-
+    const size = Math.random() * 90;
+  
     createBubble.css({
       'background': randomColor(),
-      'width': 40 + size + 'px',
-      'height': 40 + size + 'px',
-      'left': Math.random() * innerWidth + 'px'
+      'width': `${40 + size}px`,
+      'height': `${40 + size}px`,
+      'left': `${Math.random() * innerWidth}px`
     });
     
     section.append(createBubble);
-
+  
     setTimeout(() => {
-      createBubble.remove()
-    },8000)
+      createBubble.remove();
+    },8000);
   }
-
-  setInterval(Bubbles,100);
+  
+  setInterval(() => Bubbles(),100);
+  
 
   // adds sound to button on hovered
   function buttonsHover() {
@@ -79,7 +80,7 @@ $(document).ready(function() {
         $("#demo-button").html("demo");
       } else {
         $("#demo-button").html("close"); // changes btn text to close
-      };
+      }
       toggle = !toggle;
       $("video").toggle();
       $(".hide").toggle();
@@ -158,7 +159,7 @@ $(document).ready(function() {
       }
       toggle = !toggle;
     });
-  };
+  }
 
 
   // modal open after click feedback button
