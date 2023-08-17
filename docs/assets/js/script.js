@@ -65,7 +65,7 @@ $(document).ready(function() {
 
   // adds sound to button on hovered
   function buttonsHover() {
-    $('.btn, .home-btn, .sound-btn, .pop, .close, .message-btn, .close-btn, #start-btn, #facebook-icon, #twitter-icon, #youtube-icon, #instagram-icon').on('mouseenter', function() {
+    $('.btn, .home-btn, .sound-btn, .pop, .close, .message-btn, .close-btn, #start-btn, #restart-btn #facebook-icon, #twitter-icon, #youtube-icon, #instagram-icon').on('mouseenter', function() {
       if (!isSoundMuted) {
         btnSound.volume = 0.6; // Adjust the volume level
         btnSound.play();

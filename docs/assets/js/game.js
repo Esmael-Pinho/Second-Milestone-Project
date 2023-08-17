@@ -20,8 +20,11 @@ $(document).ready(function() {
     const gameSound = $('#game-sound')[0];
     const correctSound = $('#correct-sound')[0];
     const incorrectSound = $('#incorrect-sound')[0];
-    
 
+    const mostRecentScore = localStorage.getItem('mostRecentScore');
+    const finalScore = $('#score');
+    
+    
 
     // Initially hide the scoreboard and the questions
     $('#scoreboard').hide();
@@ -38,6 +41,7 @@ $(document).ready(function() {
     // call function
     changeQuestionColor();
     showScoreboard();
+    
     
 
 
@@ -60,6 +64,7 @@ $(document).ready(function() {
           correctSound.play();
           correctAnswer++;
           score += 10;
+          localStorage.setItem("mostRecentScore", score);
           $('.correct-answer').text(correctAnswer);
           $('.correct-answer').css("color", "var(--green)");
           $('.score').text(score);
@@ -77,9 +82,10 @@ $(document).ready(function() {
           displayRandomQuestion(level);
         }
         if (questionCounter === 11 || questionCounter > maxQuestions) {
-          window.location.assign("./end.html");
-      }
+          window.location.assign(`./end-game.html?score=${score}`);
+        }
       });
+
 
       // Update progress bar and text
       function updateProgress() {
@@ -92,6 +98,7 @@ $(document).ready(function() {
         $("#question-counter").text(`${currentQuestionNumber}/${totalQuestions}`);
       }
 
+      
 
 
       let currentIndex = 0;
@@ -122,8 +129,6 @@ $(document).ready(function() {
         const option = question.options[index];
         $(element).text(option);
       });
-
-      
 
     }
 
@@ -157,7 +162,17 @@ $(document).ready(function() {
         }, 400);
       });
     }
+    
 
+    // links restart btn to levels page
+    $("#restart-btn").click(function() {
+      window.location.href = "levels.html";
+    });
+
+    // finalScore.innerText = mostRecentScore;
+    finalScore.html(`${mostRecentScore} <i class="trophy fa-solid fa-trophy fa-2xl"></i>`);
+    finalScore.css("font-size", "40px");
+    finalScore.css("color", "var(--White)");
 
 });
   

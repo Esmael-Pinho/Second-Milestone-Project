@@ -15,14 +15,29 @@
         <!-- Link the Google Fonts stylesheet -->
         <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Oswald:wght@500&family=Roboto+Mono&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
+        <!-- Connecting EmailJs -->
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script>
+            (function() {
+                emailjs.init("zjb6d0aI6Bcvb6s_C");
+            })();
+        </script>
 
         <link rel="icon" type="image/x-icon" href="assets/images/logo1.png">
-        <title>Bubbles - 404 </title>
+        <title>Bubbles - Well Done </title>
         
 
     </head>
-    <body id="game-page" class="page-404">
-        <audio id="game-sound">
+    <body id="game-page">
+        <header id="game-header">
+            <h1 id="game-heading">
+                <a class="pop title">Bubbles</a>
+            </h1>
+        </header>
+    
+        <!-- End Game -->
+
+        <audio id="game-sound" autoplay loop>
             <source src="./assets/audio/game-sound.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
@@ -30,34 +45,48 @@
             <source src="./assets/audio/button-sound.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-    
-        <!-- 404 error page -->
+        <audio id="correct-sound">
+            <source src="./assets/audio/correct-answer.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="incorrect-sound">
+            <source src="./assets/audio/wrong-answer.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
         
-        <div id="container-404" class="container">
-
+        <div id="end-game-container">
 
             <div id="game-container">
-                
-                <div id="bg-404" class="game-area">
-                    <h1 id="game-heading">
-                        <a class="pop title">Bubbles</a>
-                    </h1>
-                    <h2 id="error-404">
-                        error <br> 404
-                    </h2>
-                    <h3 id="message-404">
-                        It appears there's been some error loading the questions<br>
-                        to go back, and try again, click the Logo or the home button bellow!
-                    </h3>
-                    <div id="btn-404" class="game-home-btn">
-                        <button class="home-btn" aria-label="Home Button"><i class="fa-solid fa-house"></i></button>
+                <div id="bubbles-game">
+                    <div id="options">
+                        <img class="loading-gif" src="./assets/images/loading-load.gif" alt="Loading...">
+                        <div id="end-text">
+                            <h2 class="end-heading1">Well Done !!!</h2>
+                            <h3 class="end-heading2">You've Reached the End</h3>
+                            <h4 id="final-score">Your Score: </h4> 
+                            <div id="score"> <i class="trophy fa-solid fa-trophy fa-2xl"></i></div>
+                            <p>What did you think of the game? <br>
+                                Leaves us a message below 🤗    
+                            </p>
+                        </div>
                     </div>
-                    
+                </div>
+                <div class="side-container game-home-btn">
+                    <button class="home-btn" aria-label="Home Button"><i class="fa-solid fa-house"></i></button>
+                </div>
+                <div class="game-area">
+                    <div id="start-restart-btn-container">
+                        <button id="restart-btn" aria-label="Restart Button">Play Again?</button>
+                    </div>
+                </div>
+                <div class="side-container play-pause-btn">
+                    <button class="sound-btn" aria-label="Sound Button"><i class="fa-solid fa-volume-high"></i></button>
                 </div>
             </div>
+
             
         </div>
-        
+
         <footer>
             <div>
                 <!-- Contact Button -->
@@ -85,15 +114,34 @@
                         </div>
                     </div>
                 </dialog>
+                <div class="copywrite">© 2023 Bubbles. All Rights Reserved.</div>
+                <p>This website was created for educational purposes. Milestone Project 2.</p>
+                <div id="socials">
+                    <a id="facebook-icon" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook Link</span>
+                    </a>
+                    <a id="twitter-icon" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square" aria-hidden="true"></i>
+                        <span class="sr-only">Twitter Link</span>
+                    </a>
+                    <a id="youtube-icon" href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube-square" aria-hidden="true"></i>
+                        <span class="sr-only">Youtube Link</span>
+                    </a>
+                    <a id="instagram-icon" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i>
+                        <span class="sr-only">Instagram Link</span>
+                    </a>
+                </div>
             </div>
         </footer>
-
+        
+        
+        
         <!-- Fontawesome -->
         <script src="https://kit.fontawesome.com/524826ac04.js" crossorigin="anonymous"></script>
         <!-- JQuery Library -->
         <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
         <!-- My Script -->
         <script src="assets/js/script.js"></script>
-        
+        <script src="assets/js/game.js"></script>
+        <script src="assets/js/email.js"></script>
     </body>
 </html>
