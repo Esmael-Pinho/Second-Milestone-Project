@@ -13,13 +13,14 @@ $(document).ready(function() {
     let correctAnswer = 0;
     let incorrectAnswer = 0;
     let score = 0;
-    let questionCounter = 0;
+    let questionCounter = 1;
     let maxQuestions = 10;
 
     const questionCounterText = $("#question-counter");
     const gameSound = $('#game-sound')[0];
     const correctSound = $('#correct-sound')[0];
     const incorrectSound = $('#incorrect-sound')[0];
+    
 
 
     // Initially hide the scoreboard and the questions
@@ -37,6 +38,7 @@ $(document).ready(function() {
     // call function
     changeQuestionColor();
     showScoreboard();
+    
 
 
     // Display a random question by level
@@ -47,12 +49,65 @@ $(document).ready(function() {
         return;
       }
 
-      // Filter questions by level and exclude used questions
-      const filteredQuestions = questions.filter(question => question.level === level && !usedQuestions.includes(question));
-      if (filteredQuestions.length === 0) {
-        console.log(`No more questions available with level "${level}"`);
-        return;
+
+      // when options is clicked, check correct answer and increment score, correctAnswers and incorrect
+      $('.options-btn').off('click').on('click', function() {
+        const clickedOption = $(this).text();
+        const correctOption = question.options[question.correctIndex];
+        if (clickedOption === correctOption) {
+          questionCounter++;
+          questionCounterText.text(`${questionCounter}/${maxQuestions}`); //Scoreboard - question counter
+          correctSound.play();
+          correctAnswer++;
+          score += 10;
+          $('.correct-answer').text(correctAnswer);
+          $('.correct-answer').css("color", "var(--green)");
+          $('.score').text(score);
+          $('.score').css("color", "var(--yellow)");
+          updateProgress();
+          displayRandomQuestion(level);
+        } else {
+          questionCounter++;
+          questionCounterText.text(`${questionCounter}/${maxQuestions}`);
+          incorrectSound.play();
+          incorrectAnswer++;
+          $('.incorrect-answer').text(incorrectAnswer);
+          $('.incorrect-answer').css("color", "var(--red)");
+          updateProgress();
+          displayRandomQuestion(level);
+        }
+        if (questionCounter === 11 || questionCounter > maxQuestions) {
+          window.location.assign("./end.html");
       }
+      });
+
+      // Update progress bar and text
+      function updateProgress() {
+        const totalQuestions = Math.min(maxQuestions, questions.length);
+        const currentQuestionNumber = questionCounter;
+        const progressPercentage = (currentQuestionNumber / totalQuestions) * 100;
+
+        $("#progress-bar").val(progressPercentage);
+        $("#progress-text").text(`${Math.round(progressPercentage)}%`);
+        $("#question-counter").text(`${currentQuestionNumber}/${totalQuestions}`);
+      }
+
+
+
+      let currentIndex = 0;
+      questions.forEach((question, index) => {
+        question.index = index;
+      });
+      // Filter questions by level, without repeating
+      const filteredQuestions = questions.filter(question => question.level === level && !usedQuestions.includes(question) && question.index > currentIndex);
+      if (filteredQuestions.length === 0) {
+          console.log(`No more questions available with level "${level}"`);
+          return;
+      }
+      // Update the current index to the index of the first question in the filteredQuestions array
+      currentIndex = filteredQuestions[0].index;
+
+
 
       // Select a random question
       const randomIndex = Math.floor(Math.random() * filteredQuestions.length);
@@ -68,29 +123,10 @@ $(document).ready(function() {
         $(element).text(option);
       });
 
-      // when options is clicked, check correct answer and increment score, correctAnswers and incorrect
-      $('.options-btn').click(function() {
-        const clickedOption = $(this).text();
-        const correctOption = question.options[question.correctIndex];
-        if (clickedOption === correctOption) {
-          correctSound.play();
-          correctAnswer++;
-          score += 10;
-          questionCounter++;
-          questionCounterText.text(`${questionCounter}/${maxQuestions}`); //Scoreboard - question counter
-          $('.correct-answer').text(correctAnswer);
-          $('.score').text(score);
-          displayRandomQuestion(level);
-        } else {
-          incorrectSound.play();
-          incorrectAnswer++;
-          $('.incorrect-answer').text(incorrectAnswer);
-          displayRandomQuestion(level);
-        }
-      });
       
 
     }
+
 
     // Change the color of #question according to the level
     function changeQuestionColor() {
@@ -122,10 +158,6 @@ $(document).ready(function() {
       });
     }
 
-
-    
-    
-  
 
 });
   
