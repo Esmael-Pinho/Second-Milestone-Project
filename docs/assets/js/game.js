@@ -7,15 +7,19 @@ $(document).ready(function() {
     const level = urlParams.get('level');
   
     // Variables for the game
-    var correctAnswer;
+    
     let questions = [];
     let usedQuestions = [];
-    let questionIndices = [];
-    let currentQuestionIndex = 0;
+    let correctAnswer = 0;
+    let incorrectAnswer = 0;
     let score = 0;
+    let questionCounter = 0;
     let maxQuestions = 10;
 
-    const gameSound = document.getElementById('game-sound');
+    const questionCounterText = $("#question-counter");
+    const gameSound = $('#game-sound')[0];
+    const correctSound = $('#correct-sound')[0];
+    const incorrectSound = $('#incorrect-sound')[0];
 
 
     // Initially hide the scoreboard and the questions
@@ -33,7 +37,8 @@ $(document).ready(function() {
     // call function
     changeQuestionColor();
     showScoreboard();
-  
+
+
     // Display a random question by level
     function displayRandomQuestion(level) {
       // Check if questions have been loaded
@@ -63,6 +68,27 @@ $(document).ready(function() {
         $(element).text(option);
       });
 
+      // when options is clicked, check correct answer and increment score, correctAnswers and incorrect
+      $('.options-btn').click(function() {
+        const clickedOption = $(this).text();
+        const correctOption = question.options[question.correctIndex];
+        if (clickedOption === correctOption) {
+          correctSound.play();
+          correctAnswer++;
+          score += 10;
+          questionCounter++;
+          questionCounterText.text(`${questionCounter}/${maxQuestions}`); //Scoreboard - question counter
+          $('.correct-answer').text(correctAnswer);
+          $('.score').text(score);
+          displayRandomQuestion(level);
+        } else {
+          incorrectSound.play();
+          incorrectAnswer++;
+          $('.incorrect-answer').text(incorrectAnswer);
+          displayRandomQuestion(level);
+        }
+      });
+      
 
     }
 
@@ -82,7 +108,7 @@ $(document).ready(function() {
     // Show the scoreboard and questions when the button is clicked, and hide start btn
     function showScoreboard() {
       $("#start-btn").click(function() {
-        // $("#start-btn").hide();
+        $("#start-btn").hide();
         $(".loading-gif").show(); // Show the gif element
         setTimeout(function() {
           $(".loading-gif").hide(); // Hide the gif element 
@@ -96,13 +122,8 @@ $(document).ready(function() {
       });
     }
 
-    const optionsBtn = $(".options-btn")
-    function showQuestion() {
-      optionsBtn.html = "";
-      const question = filteredQuestions[randomIndex];
-      correctAnswer = question.correctIndex;
+
     
-    }
     
   
 

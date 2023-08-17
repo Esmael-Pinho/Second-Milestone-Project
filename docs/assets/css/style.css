@@ -519,7 +519,6 @@ button {
     height: 200px;
     border-radius: 50%;
     color: var(--White);
-    /* background-color: #1a5eb3; */
     font-size: 35px;
     cursor: pointer;
 }
