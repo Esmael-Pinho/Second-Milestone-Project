@@ -119,7 +119,7 @@ h1,h2 {
     height: 130px;
 }
 
-.btn, .pop, .message-btn, .sound-btn, .home-btn, #btn-404, #start-btn {
+.btn, .pop, .message-btn, .sound-btn, .home-btn, #btn-404 {
     cursor: url(../images/logo.png), pointer;
 }
 
@@ -255,6 +255,7 @@ section span:before {
     background: radial-gradient(#fff,transparent);
     border-radius: 50%;
 }
+
 
 @keyframes animate {
     0% {
@@ -489,12 +490,52 @@ button {
     top: auto;
     left: 50px;
     width: 800px;
-    height: 50vh;
+}
+
+
+#choices-container {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem 1rem;
+}
+
+.choices {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    color: var(--White);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.choices-btn {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    color: var(--White);
+    /* background-color: #1a5eb3; */
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.choices-btn .btn {
+    background-color: #1a5eb3;
+    cursor: pointer;
+}
+
+.choices-btn .border-color {
+    border: 5px solid #1a5eb3;
 }
 
 #start-restart-btn-container {
     position: absolute;
-    left: 47.5%;
+    left: 46.5%;
     bottom: 8px;
     border-radius: 50%;
 }
@@ -508,6 +549,7 @@ button {
     border-radius: 50%;
     font-weight: bold;
     border: 2px solid var(--red);
+    cursor: pointer;
 }
 
 #start-btn:hover {

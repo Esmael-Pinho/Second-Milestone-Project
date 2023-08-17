@@ -7,9 +7,16 @@ $(document).ready(function() {
     const level = urlParams.get('level');
   
     // Variables for the game
+    var correctAnswer;
     let questions = [];
     let usedQuestions = [];
+    let questionIndices = [];
+    let currentQuestionIndex = 0;
+    let score = 0;
+    let maxQuestions = 10;
+
     const gameSound = document.getElementById('game-sound');
+
 
     // Initially hide the scoreboard and the questions
     $('#scoreboard').hide();
@@ -47,6 +54,16 @@ $(document).ready(function() {
       const question = filteredQuestions[randomIndex];
       usedQuestions.push(question);
       $('#question').text(question.question);
+
+
+      // Pulls and display the options for the selected question 
+      const optionsElements = $('.options-btn');
+      optionsElements.each((index, element) => {
+        const option = question.options[index];
+        $(element).text(option);
+      });
+
+
     }
 
     // Change the color of #question according to the level
@@ -59,8 +76,9 @@ $(document).ready(function() {
         $('#question').css('color', 'var(--red)');
       }
     }
+
   
-  
+    $(".choices-btn").hide();
     // Show the scoreboard and questions when the button is clicked, and hide start btn
     function showScoreboard() {
       $("#start-btn").click(function() {
@@ -68,6 +86,7 @@ $(document).ready(function() {
         $(".loading-gif").show(); // Show the gif element
         setTimeout(function() {
           $(".loading-gif").hide(); // Hide the gif element 
+          $(".choices-btn").show();
           displayRandomQuestion(level);
           $("#scoreboard").show();
           $("#scoreboard").css("display", "flex");
@@ -76,8 +95,16 @@ $(document).ready(function() {
         }, 400);
       });
     }
-    
 
+    const optionsBtn = $(".options-btn")
+    function showQuestion() {
+      optionsBtn.html = "";
+      const question = filteredQuestions[randomIndex];
+      correctAnswer = question.correctIndex;
+    
+    }
+    
+  
 
 });
   

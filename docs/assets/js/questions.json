@@ -1,185 +1,401 @@
 [
     {
       "question": "Maria has 4 apples and she has eaten 3 how many are left?",
+      "options": [
+        "43",
+        "34",
+        "3",
+        "1"
+      ],
       "level": "easy",
-      "answer": "1"
+      "correctIndex": "3"
     },
     {
       "question": "If you have 3 apples and your friend gives you 2 more, how many apples do you have in total?",
+      "options": [
+        "3",
+        "5",
+        "83",
+        "6"
+      ],
       "level": "easy",
-      "answer": "5"
+      "correctIndex": "1"
     },
     {
       "question": "If a box of cookies contains 10 cookies and you eat 4 of them, how many cookies are left in the box?",
+      "options": [
+        "6",
+        "12",
+        "10",
+        "2"
+      ],
       "level": "easy",
-      "answer": "6"
+      "correctIndex": "0"
     },
     {
       "question": "If a car travels 30 miles per hour and you travel for 2 hours, how many miles will you have traveled?",
+      "options": [
+        "35",
+        "2",
+        "30",
+        "60"
+      ],
       "level": "easy",
-      "answer": "60"
+      "correctIndex": "3"
     },
     {
       "question": "If a shirt costs 20£ and you have a coupon for 5£ off, how much will the shirt cost after the discount is applied?",
+      "options": [
+        "30",
+        "15",
+        "3",
+        "16"
+      ],
       "level": "easy",
-      "answer": "15"
+      "correctIndex": "1"
     },
     {
       "question": "If a recipe calls for 2 cups of flour and you want to make half the recipe, how many cups of flour will you need?",
+      "options": [
+        "1",
+        "3",
+        "2",
+        "8"
+      ],
       "level": "easy",
-      "answer": "1"
+      "correctIndex": "0"
     },
     {
-      "question": "If a movie starts at 7:00 PM and is 2 hours long, at what time will the movie end?",
+      "question": "If a movie starts at 7 and is 2 hours long, at what time will the movie end?",
+      "options": [
+        "13",
+        "19",
+        "5",
+        "9"
+      ],
       "level": "easy",
-      "answer": "9"
+      "correctIndex": "3"
     },
     {
       "question": "Which is the only number that cannot be used as a Divisor?",
+      "options": [
+        "10",
+        "0",
+        "3",
+        "1"
+      ],
       "level": "easy",
-      "answer": "0"
+      "correctIndex": "1"
     },
     {
       "question": "The cost of 1 book is 7£. What is the cost of 6 books?",
+      "options": [
+        "39",
+        "45",
+        "42",
+        "14"
+      ],
       "level": "easy",
-      "answer": "42"
+      "correctIndex": "2"
     },
     {
       "question": "How many 5 you need to make 25?",
+      "options": [
+        "1",
+        "5",
+        "3",
+        "6"
+      ],
       "level": "easy",
-      "answer": "5"
+      "correctIndex": "1"
     },
     {
       "question": "From these numbers 25, 55, 78, 435 and 12, what is the smallest?",
+      "options": [
+        "3",
+        "25",
+        "12",
+        "78"
+      ],
       "level": "easy",
-      "answer": "12"
+      "correctIndex": "2"
     },
     {
       "question": "If you multiply all the numbers on the phone. What will you get?",
+      "options": [
+        "77",
+        "56",
+        "99",
+        "0"
+      ],
       "level": "easy",
-      "answer": "0"
+      "correctIndex": "3"
     },
 
     {
       "question": "What is the square root of 144?",
+      "options": [
+        "4",
+        "12",
+        "44",
+        "88"
+      ],
       "level": "medium",
-      "answer": "12"
+      "correctIndex": "1"
     },
     {
       "question": "Look at this series: 36, 34, 30, 28, 24, … What number should come next?",
+      "options": [
+        "20",
+        "22",
+        "18",
+        "27"
+      ],
       "level": "medium",
-      "answer": "22"
+      "correctIndex": "1"
     },
     {
       "question": "At a party everyone shook hands with everyone else. In total, there were 66 handshakes. How many were at the party?",
+      "options": [
+        "33",
+        "20",
+        "3",
+        "7"
+      ],
       "level": "medium",
-      "answer": "7"
+      "correctIndex": "3"
     },
     {
       "question": "What is the only number that is twice the sum of its digits (other than 0)?",
+      "options": [
+        "18",
+        "33",
+        "88",
+        "6"
+      ],
       "level": "medium",
-      "answer": "18"
+      "correctIndex": "0"
     },
     {
       "question": "The total number of dots on a dice?",
+      "options": [
+        "33",
+        "6",
+        "8",
+        "21"
+      ],
       "level": "medium",
-      "answer": "21"
+      "correctIndex": "3"
     },
     {
       "question": "Lesley ranked 8th from the top & 26th from the bottom in a class. How many students are there in the class?",
+      "options": [
+        "23",
+        "15",
+        "33",
+        "16"
+      ],
       "level": "medium",
-      "answer": "33"
+      "correctIndex": "2"
     },
     {
       "question": "A farmer has 17 sheep and all but 9 die. How many are left?",
+      "options": [
+        "14",
+        "8",
+        "26",
+        "9"
+      ],
       "level": "medium",
-      "answer": "9"
+      "correctIndex": "3"
     },
     {
       "question": "In a store there are 3 apples and you take away 2, how many do you have?",
+      "options": [
+        "2",
+        "6",
+        "3",
+        "5"
+      ],
       "level": "medium",
-      "answer": "2"
+      "correctIndex": "2"
     },
     {
       "question": "In a family with 2 mothers, 2 daughters, 1 grandmother and 1 grandmother. How many people are in the family?",
+      "options": [
+        "18",
+        "9",
+        "3",
+        "6"
+      ],
       "level": "medium",
-      "answer": "3"
+      "correctIndex": "2"
     },
     {
       "question": "I am a number between 0 and 10. I am more than 2. I am before 4. Who am I?",
+      "options": [
+        "3",
+        "10",
+        "4",
+        "2"
+      ],
       "level": "medium",
-      "answer": "3"
+      "correctIndex": "0"
     },
     {
       "question": "There are 10 fish in a tank, 2 drown, 4 swam away and 3 changed colors. How many are there now?",
+      "options": [
+        "2",
+        "5",
+        "9",
+        "10"
+      ],
       "level": "medium",
-      "answer": "10"
+      "correctIndex": "3"
     },
     {
       "question": "John has 4 pencils. Ruby has 5 pencils. How many they have altogether?",
+      "options": [
+        "4",
+        "20",
+        "9",
+        "1"
+      ],
       "level": "medium",
-      "answer": "9"
+      "correctIndex": "2"
     },
     
     {
       "question": "If a boy blows 18 bubbles, Then pops 6 eats 7 and then he pops 5 and blows 1. How many are left?",
+      "options": [
+        "3",
+        "56",
+        "1",
+        "86"
+      ],
       "level": "hard",
-      "answer": "1"
+      "correctIndex": "2"
     },
     {
       "question": "What is the smallest prime number?",
+      "options": [
+        "3",
+        "2",
+        "41",
+        "1"
+      ],
       "level": "hard",
-      "answer": "2"
+      "correctIndex": "1"
     },
     {
       "question": "Sally is 54 years old and her mother is 80, how many years ago was Sally’s mother times her age?",
+      "options": [
+        "25",
+        "40",
+        "12",
+        "41"
+      ],
       "level": "hard",
-      "answer": "41"
+      "correctIndex": "3"
     },
     {
       "question": "If 2 =5  and 4 = 9 what's the value of 2 x 4 + 1 ?",
+      "options": [
+        "9",
+        "8",
+        "46",
+        "19"
+      ],
       "level": "hard",
-      "answer": "46"
+      "correctIndex": "2"
     },
     {
       "question": "If 1 = 3;   2 = 2;  3 = 5;  4 = 4;  5 = 4 Then, 6 = ?",
+      "options": [
+        "3",
+        "4",
+        "8",
+        "6"
+      ],
       "level" : "hard",
-      "answer": "3"
+      "correctIndex": "0"
     },
     {
       "question": "What is the thirteenth prime number?",
+      "options": [
+        "55",
+        "5",
+        "13",
+        "41"
+      ],
       "level" : "hard",
-      "answer": "41"
+      "correctIndex": "3"
     },
     {
       "question": "What is the next prime number after 5?",
+      "options": [
+        "17",
+        "7",
+        "2",
+        "21"
+      ],
       "level" : "hard",
-      "answer": "7"
+      "correctIndex": "1"
     },
     {
       "question": "A clock chimes 5 times in 4 seconds. How many times will it chime in 10 seconds?",
+      "options": [
+        "11",
+        "10",
+        "8",
+        "6"
+      ],
       "level" : "hard",
-      "answer": "11"
+      "correctIndex": "0"
     },
     {
       "question": "Pick a number from 1-10, multiply it by 2, add ten, divide it by 2. Take away the number you started with. What is your number?",
+      "options": [
+        "45",
+        "5",
+        "26",
+        "4"
+      ],
       "level" : "hard",
-      "answer": "5"
+      "correctIndex": "1"
     },
     {
       "question": "My big brother is 4 years old, I am half is age. In 50 years, how old will I be?",
+      "options": [
+        "40",
+        "54",
+        "25",
+        "52"
+      ],
       "level" : "hard",
-      "answer": "52"
+      "correctIndex": "3"
     },
     {
-      "question": "If 4 men can build four tables in 4 hours, how many can 8 men build in eight hours?",
+      "question": "If 4 men can build four tables in 4 hours, how many can 8 men build in 8 hours?",
+      "options": [
+        "44",
+        "16",
+        "88",
+        "66"
+      ],
       "level" : "hard",
-      "answer": "16"
+      "correctIndex": "1"
     },
     {
       "question": "If you multiply this number by any other number, the answer will always be the same. What is the number?",
+      "options": [
+        "88",
+        "69",
+        "0",
+        "1"
+      ],
       "level" : "hard",
-      "answer": "0"
+      "correctIndex": "2"
     }
       
 ]
