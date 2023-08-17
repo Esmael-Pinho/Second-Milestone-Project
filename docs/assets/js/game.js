@@ -166,7 +166,13 @@ $(document).ready(function() {
 
     // links restart btn to levels page
     $("#restart-btn").click(function() {
-      window.location.href = "levels.html";
+      $("#end-text").hide();
+      $(".loading-gif").show();
+        setTimeout(function() {
+          $(".loading-gif").hide();
+          window.location.href = "levels.html";
+        }, 600);
+      
     });
 
     // finalScore.innerText = mostRecentScore;

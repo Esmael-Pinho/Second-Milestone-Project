@@ -49,7 +49,7 @@
 }
 
 body {
-    margin: 0px;
+    margin: 0;
     font-family: "Ubuntu", 'Oswald', monospace;
     margin-bottom: 2rem;
     display: grid;
@@ -806,3 +806,405 @@ dialog p {
 }
 
 /* ---------------   /End Game-End Page -------------- */
+
+
+/* ---------------   Media Queries -------------- */
+
+/* ----------   Media Queries --------- */
+/* --------Small Screens 425px */
+
+@media (min-width: 425px) {
+    /* Home Page */
+    #overlay-content h1 {
+        margin-top: 3rem;
+        font-size: 40px;
+    }
+    .pop {
+        font-size: 46px;
+    }
+    #overlay-content button {
+        padding-top: 0;
+    }
+    video {
+        width: 350px;
+    }
+
+    /* Levels Page */
+    h1 {
+        margin: 1rem auto;
+    }
+    .title {
+        font-size: 50px;
+    }
+    #level-text{
+        margin: 2rem auto;
+    }
+    
+    .game-area {
+        width: 390px;
+        height: 205vh;
+    }
+    .level-difficulty-area {
+        width: 400px;
+        margin: 75px auto;
+    }
+    .btn--big {
+        width: 140px;
+        height: 140px;
+        padding-top: 10px;
+        margin: 0 5px;
+    }
+    .level-home-btn {
+        left: 0;
+        top: 210%;
+    }
+    .level-sound-btn {
+        right: 5%;
+        top: 210%;
+    }
+    .easy, .medium, .hard {
+        margin: 0 -2px;
+        width: 32%;
+        margin-top: 4rem;
+    }
+    .message-btn {
+        margin: 2.5rem auto;
+    }
+
+    /* Game Page */
+    #questions-container {
+        width: inherit;
+        height: 90px;
+        min-width: inherit;
+        margin-bottom: 0;
+    }
+    #question {
+        padding: 1rem 2rem;
+    }
+    #bubbles-game {
+        top: auto;
+        left: auto;
+        width: 400px;
+    }
+    .game-home-btn {
+        left: 3%;
+        top: 103%;
+    }
+    .play-pause-btn {
+        right: 5%;
+        top: 103%;
+    }
+    #start-restart-btn-container {
+        left: 40%;
+    }
+    .choices {
+        width: 180px;
+        height: 180px;
+    }
+
+    /*  End-Game */
+
+    #end-text {
+        margin: auto 10px;
+        width: 370px;
+        height: 470px;
+        text-align: center;
+    }
+
+}
+/* End Small 425px */
+
+/* --------Medium Screens 700px */
+    /* Home Page */
+@media (min-width: 700px) {
+    #overlay-content h1 {
+        margin-top: 10rem;
+        font-size: 40px;
+    }
+    .pop {
+        font-size: 48px;
+    }
+    #overlay-content button {
+        padding-top: 2rem;
+    }
+    video {
+        width: 480px;
+    }
+
+    /* Levels Page */
+    h1 {
+        margin: 1rem auto;
+    }
+    .title {
+        font-size: 55px;
+    }
+    #level-text{
+        margin: 2.5rem auto;
+    }
+    
+    .game-area {
+        width: 510px;
+        height: 205vh;
+    }
+    .level-difficulty-area {
+        width: 510px;
+        margin: 100px auto;
+    }
+    .btn--big {
+        width: 180px;
+        height: 180px;
+        padding-top: 10px;
+        margin: 0 5px;
+    }
+    .level-home-btn {
+        left: 0;
+        top: 165%;
+    }
+    .level-sound-btn {
+        right: 5%;
+        top: 165%;
+    }
+    .easy, .medium, .hard {
+        margin: 0 1px;
+        width: 30%;
+        margin-top: 4rem;
+    }
+    .message-btn {
+        margin: .5rem auto;
+    }
+
+    /* Game Page */
+    #game-header {
+        margin: 1rem;
+    }
+    #scoreboard {
+        width: auto;
+        margin: auto;
+    }
+    #questions-container {
+        margin-top: 20px;
+        width: inherit;
+        height: 90px;
+        min-width: inherit;
+        margin-bottom: .85rem;
+    }
+    #question {
+        padding: .5rem 1rem;
+    }
+    #bubbles-game {
+        top: auto;
+        left: 50px;
+        width: 400px;
+    }
+    .game-home-btn {
+        left: 3%;
+        top: 103%;
+    }
+    .play-pause-btn {
+        right: 5%;
+        top: 103%;
+    }
+    #start-restart-btn-container {
+        left: 40%;
+    }
+    .choices {
+        width: 180px;
+        height: 180px;
+    }
+
+    /*  End-Game */
+
+    #end-text {
+        margin: auto 10px;
+        width: 370px;
+        height: 470px;
+        text-align: center;
+    }
+}
+/* -------- End Medium Screens 700px */
+
+/* -------- Large Screens 960px */
+    /* Home Page */
+@media (min-width: 960px) {
+    #overlay-content h1 {
+        margin-top: 11rem;
+        font-size: 40px;
+    }
+    .pop {
+        font-size: 49px;
+    }
+    #overlay-content button {
+        padding-top: 1rem;
+    }
+    video {
+        width: 480px;
+    }
+
+    /* Levels Page */
+    .title {
+        font-size: 56px;
+    }
+    #level-text{
+        margin: 2.55rem auto;
+    }
+    
+    .game-area {
+        width: 610px;
+        height: 200vh;
+    }
+    .level-difficulty-area {
+        width: 610px;
+        margin: 100px auto;
+    }
+    .btn--big {
+        width: 190px;
+        height: 190px;
+        padding-top: 5px;
+        margin: 0 5px;
+    }
+    .level-home-btn {
+        left: -18%;
+        top: 50%;
+    }
+    .level-sound-btn {
+        right: -14%;
+        top: 50%;
+    }
+    .easy, .medium, .hard {
+        width: 31%;
+        margin-top: 2rem;
+    }
+    .message-btn {
+        margin: auto auto 1rem;
+    }
+
+    /* Game Page */
+    #scoreboard {
+        width: 90%;
+        margin: 1.85rem auto;
+    }
+    #questions-container {
+        margin-bottom: .25rem;
+    }
+    #question {
+        padding: 1rem 1.5rem;
+    }
+    #bubbles-game {
+        left: auto;
+        width: 620px;
+    }
+    .game-home-btn {
+        left: -15%;
+        top: 45%;
+    }
+    .play-pause-btn {
+        right: -15%;
+        top: 45%;
+    }
+    #start-restart-btn-container {
+        left: 44%;
+    }
+    #choices-container {
+        gap: 2rem 2rem;
+    }
+    .choices {
+        width: 190px;
+        height: 190px;
+    }
+
+    /*  End-Game */
+
+    #end-text {
+        margin: 0 10px 0 23px;
+        width: 560px;
+    }
+}
+/* -------- End Large Screens 960px */
+
+/* -------- Extra Large Screens 1380px */
+     /* Home Page */
+@media (min-width: 1380px) {
+     #overlay-content h1 {
+        font-size: 46px;
+    }
+    .pop {
+        font-size: 56px;
+    }
+    #overlay-content button {
+        padding-top: 1rem;
+    }
+    video {
+        width: 590px;
+    }
+
+    /* Levels Page */
+    .title {
+        font-size: 62px;
+    }
+    .game-area {
+        width: 900px;
+        height: 85vh;
+    }
+    #game-container {
+        margin-left: 50px;
+    }
+    .level-difficulty-area {
+        width: 850px;
+        margin: 90px auto;
+    }
+    .btn--big {
+        width: 240px;
+        height: 240px;
+        padding-top: 2px;
+    }
+    .level-home-btn {
+        left: -22%;
+        top: 40%;
+    }
+    .level-sound-btn {
+        right: -12%;
+        top: 40%;
+    }
+    .easy, .medium, .hard {
+        width: 33%;
+        margin-top: 2rem;
+    }
+
+    /* Game Page */
+    #question {
+        padding: 1.5rem 2.5rem;
+    }
+    #bubbles-game {
+        left: 50px;
+        width: 820px;
+    }
+    .game-home-btn {
+        left: -15%;
+        top: 45%;
+    }
+    .play-pause-btn {
+        right: -15%;
+        top: 45%;
+    }
+    #start-restart-btn-container {
+        left: 46.5%;
+    }
+    #choices-container {
+        gap: 2.5rem 2.5rem;
+    }
+    .choices {
+        width: 220px;
+        height: 220px;
+    }
+
+    /*  End-Game */
+
+    #end-text {
+        margin: 0 auto;
+        width: 800px;
+    }
+
+}
+/* -------- End Extra Large Screens 1400px */
+
+/* End Media queries  */
