@@ -62,7 +62,7 @@ Milestone Project 2.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Demo Button | Clicks demo button | Play button disappears, a video demonstration  shows with controls available  | [Works as expected](/) |
+| Demo Button | Clicks demo button | Play button disappears, a video demonstration  shows with controls available  | [Works as expected](docs/assets/video/demo-video.mp4) |
 
 
 
@@ -70,7 +70,7 @@ Milestone Project 2.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Level selected | Choose difficulty level | Game starts according to level selected | [Works as expected](docs/assets/images/readme/Levels-page.png) |
+| Level selected | Choose difficulty level | Game starts according to level selected | ![Works as expected](docs/assets/video) |
 
 
 - As a player, I want to be able to check my progress, the correct and incorrect answers ans score during the game.
@@ -134,9 +134,9 @@ The website consists of three pages home-page, level-page, game-page. The pages 
 
  ![Home-Page](docs/assets/images/readme/home-page.png)
 
- | **Demo-Page** | **Play Button** |
-|-----------------------|------------|
-| The Demo button once clicked, hides the play button and adds a video demonstration of how to play the game as well as navigate the page. | The Play button once clicked will take the user to the Levels page |
+ | **Demo-Page** | **Play Button** | **Logo** |
+|----------------|-----------------|----------|
+| The Demo button once clicked, hides the play button and adds a video demonstration of how to play the game as well as navigate the page. | The Play button once clicked will take the user to the Levels page | Takes the user to the home page when clicked |
 
 ### Levels-Page
  - This page requests the user to select a game difficulty level. Displaying a container with three buttons, easy, medium, hard, each representing a game level. The page also displays a home and a sound button, in case the player wants to return to the home-page, or simply toggle the sound off.
@@ -144,7 +144,7 @@ The website consists of three pages home-page, level-page, game-page. The pages 
  ![Levels-Page](docs/assets/images/readme/Levels-page.png)
 
 | **Home-btn** | **Sound-btn** | **Easy - Medium - Hard buttons**|
-|-----------------------|------------|--------------|
+|--------------|---------------|---------------------------------|
 | Takes the player back the the previews page(Home-Page). | Pause or play the sound | Takes the player to the next page (game page, according to the difficulty level chosen) |
  
  The levels page also contains a footer containing social links and a feedback button which will open a modal allowing the player to send me an email message.  
@@ -155,14 +155,24 @@ The website consists of three pages home-page, level-page, game-page. The pages 
 
 
  ### Game-Page
-  - 
+  - This page also contains the logo, home-btn, sound-btn and footer, the same as levels-page, with the same functionalities. However, now provides a start btn which will start the game, displaying a scoreboard at the top, composed with a questions number indication, a correct and incorrect answers, and a score. Following those it displays the questions, choosing them at random.
+  On the game-area the user it's presented with four buttons, four choices, choosing the right one will display a "correct" sound and a "incorrect" sound for thw wrong answer. incrementing the question indices as well as the score...
 
+| **Start-btn** | **Options-btns** | **Correct and Incorrect answers**|
+|---------------|-------------------|--------------------------------------|
+| Upon clicking the btn a loading git is displayed to show interactivity, then displays scoreboard along with questions and the options-btn | Each as four different choices, being them 4. clicking on the right on will increment the question number as well as correctAnswers | Depending on the choice it will activate a different sound conformed   |
 
 Before game start:
   ![Game-Page](docs/assets/images/readme/Before-game-start.png)
 
 After game start:
   ![Game-Page](docs/assets/images/readme/)
+
+
+  ### Game-End-Page
+  - This page shows a congratulations message to the user along the the total score, and asks for a feedback.
+
+  ![Game-End-Page](docs/assets/images/readme/Error-404-Page.png)
 
 
   ### 404-Page
@@ -172,7 +182,7 @@ After game start:
 
 
 # Known Bugs
-I've had no know buggs on the project so far
+The only bugs detected were css ones, as there were some contents overflowing, but those were handled on the moment.
 
 # Technologies Used
 
@@ -267,16 +277,16 @@ To clone the Popping repository:
 
 * Initial Testing
 
-| **Overlay-Home-Page** | **Levels** | **Game** | **404-Page** | **Style.css** |
-|-----------------------|------------|----------|--------------|---------------|
+| **Overlay-Home-Page** | **Levels** | **Game** | **404-Page** | **End-Game-Page** | **Style.css** |
+|-----------------------|------------|----------|--------------|-------------------|---------------|
 | [Home-Page](/docs/assets/images/readme/home-page-initial-test.png) | [Levels](/docs/assets/images/readme/levels-page-initial-test.png) | [Game-Page](docs/assets/images/readme/Game-page-initial-test.png) | [404-Page](docs/assets/images/readme/Page-404-test.png) | [Css](docs/assets/images/readme/Css-initial-test.png) |
 |* Warning about using aria-label on div |* Unnecessary use of type attribute for script javascript, and aria-labelledby for empty content |* Duplicated ids and empty heading 'h2' |* No issues found |* No issues found |
 
 
 * Final Testing
 
-| **Overlay-Home-Page** | **Levels** | **Game** | **404-Page** | **Style.css** |
-|-----------------------|------------|----------|--------------|---------------|
+| **Overlay-Home-Page** | **Levels** | **Game** | **404-Page** | **End-Game-Page** | **Style.css** |
+|-----------------------|------------|----------|--------------|-------------------|---------------|
 | [Home-Page](/docs/assets/images/readme/home-page-final-test.png) | [Levels](/docs/assets/images/readme/Levels-page-final-test.png) | [Game-Page]() | [404-Page](docs/assets/images/readme/Page-404-test.png) | [Css]() |
 |* No issues found |* No issues found | |* No issues found | |
 
@@ -286,21 +296,21 @@ To clone the Popping repository:
 | **Script.js** | **Email.js** | **Game.js** |
 |---------------|--------------|-------------|
 | [Script test](/docs/assets/images/readme/Jshint-test/Script-js-test.png) | [Email test](/docs/assets/images/readme/Jshint-test/email.js-test.png) | [Game.js test]() |
-|* Warning: 2 undefined variables -$- and innerwidth . It kept saying that the jquery symbol was undefined, I did search as to why that could be but cound't find any reason. |* Warnings: 2 undefined variables -$- and emailjs, and 1 unused sendEmail, but sendEmail is link on the html page. |*  |
+|* Warning: 2 undefined variables -$- and innerwidth . It kept saying that the jquery symbol was undefined, I did search as to why that could be but couldn't find any reason. |* Warnings: 2 undefined variables -$- and emailjs, and 1 unused sendEmail, but sendEmail is link on the html page. |*  |
 
 
 ### Lighthouse
 Initial Testing:
 
-| **Overlay-Home-Page** | **Levels** | **Game** | **404-Page** |
-|-----------------------|------------|----------|--------------|
+| **Overlay-Home-Page** | **Levels** | **Game** | **404-Page** | **End-Game-Page** |
+|-----------------------|------------|----------|--------------|-------------------|
 | [Home-Page](/docs/assets/images/readme/LightHouse/home-page-lighthouse-test.png) | [Levels](/docs/assets/images/readme/LightHouse/levels-page-lighthouse-test.png) | [Game-Page](docs/assets/images/readme/LightHouse/game-before-start-lighthouse-test.png) | [404-Page](docs/assets/images/readme/LightHouse/page-404-lighthouse-test.png) |
-|* No main issues.Just the fact that I have some extensions that seem to be affecting the SEO. - Final test to be on a incognito mode, to see if the isse continues. |* Extensions issues |* Extensions issues |* Extensions issues |
+|* No main issues.Just the fact that I have some extensions that seem to be affecting the SEO. - Final test to be on a incognito mode, to see if the issue continues. |* Extensions issues |* Extensions issues |* Extensions issues |
 
 Final Testing:
 
-| **Overlay-Home-Page** | **Levels** | **Game** | **404-Page** |
-|-----------------------|------------|----------|--------------|
+| **Overlay-Home-Page** | **Levels** | **Game** | **404-Page** | **End-Game-Page** |
+|-----------------------|------------|----------|--------------|-------------------|
 | [Home-Page](/docs/assets/images/readme/LightHouse/) | [Levels](/docs/assets/images/readme/LightHouse/) | [Game-Page](docs/assets/images/readme/LightHouse/) | [404-Page](docs/assets/images/readme/LightHouse/) |
 |* Still to test |* Still to test |* Still to test |* Still to test |
 
@@ -350,6 +360,16 @@ To fully test my website I performed the following testings using a number of br
 | Sound Button | Clicked sound btn | User can toggle between sound on or off, displaying the sound on icon or sound off | Pass |
 | Feedback Button | Clicked feedback/message btn | Modal opens up that allows the user to fill in a form with, name, email, and a message, that can then be submitted, via the submit btn to send a message | Pass |
 
+
+- End-Game Page: 
+
+| Feature | Test Performed | Expected Result | Pass/Fail |
+|---------|----------------|-----------------|-----------|
+| Logo | Clicked logo | The user is directed to the home page | Pass |
+| Home Button | Clicked home btn | User is directed to home page | Pass |
+| Feedback Button | Clicked feedback/message btn | Modal opens up that allows the user to fill in a form with, name, email, and a message, that can then be submitted, via the submit btn to send a message | Pass |
+| Play Again btn | Clicked play again | The user is taken back to the Levels page where it can select the difficulty level it requires ans play again | Pass |
+
 - 404 Page: 
 
 | Feature | Test Performed | Expected Result | Pass/Fail |
@@ -370,9 +390,11 @@ To fully test my website I performed the following testings using a number of br
 
 ## Code
 
-* Home Page Overlay Bubbles: [Youtube]()
+* Home Page Overlay Bubbles: [Youtube](https://www.youtube.com/watch?v=noC22oMVb44&t=1s) // code used on overlay - home page then created a random color function and applied to it to make more colorful.
 
-* Logo Gradient: [Youtube](https://www.youtube.com/watch?v=f3mwKLXpOLk&list=PL4-IK0AVhVjMI45H5E9oE47wj-7AZLNnK) - code used on site logo
+* Fetch data from Json file: [Youtube](https://www.youtube.com/watch?v=Oage6H4GX2o) // video used to help me understand and how to pull the json file array to my javascript. Then did i little search on how to convert it to JQuery as i used it to code .
+
+* Logo Gradient: [Youtube](https://www.youtube.com/watch?v=f3mwKLXpOLk&list=PL4-IK0AVhVjMI45H5E9oE47wj-7AZLNnK) - code used on site logo // a hover animation that I found interesting to add, but code: background-clip: text; wasn't working. did i little search and found out why. None compatible with the browser. this one worked thought: -webkit-background-clip: text; 
 
 * Email.js: [Code Institute emailJs walkthrough project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/e4710f80cdf34bffbd607bc102482d5c/?child=first)
 
