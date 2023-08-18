@@ -27,7 +27,7 @@ $(document).ready(function() {
     
 
     // Initially hide the scoreboard and the questions
-    $('#scoreboard').hide();
+    // $('#scoreboard').hide();
     $('.container').css('margin-top', '7.3rem', 'margin-bottom', '0');
   
     // Load questions from JSON file
