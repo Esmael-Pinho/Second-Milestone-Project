@@ -148,7 +148,7 @@ $(document).ready(function() {
     // $(".choices-btn").hide();
     // Show the scoreboard and questions when the button is clicked, and hide start btn
     function showScoreboard() {
-      $("#start-btn").click(function() {
+      // $("#start-btn").click(function() {
         // $("#start-btn").hide();
         $(".loading-gif").show(); // Show the gif element
         setTimeout(function() {
