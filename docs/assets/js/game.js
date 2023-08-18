@@ -27,8 +27,8 @@ $(document).ready(function() {
     
 
     // Initially hide the scoreboard and the questions
-    // $('#scoreboard').hide();
-    // $('.container').css('margin-top', '7.3rem', 'margin-bottom', '0');
+    $('#scoreboard').hide();
+    $('.container').css('margin-top', '7.3rem', 'margin-bottom', '0');
   
     // Load questions from JSON file
     $.getJSON('./assets/js/questions.json', data => {
@@ -40,7 +40,7 @@ $(document).ready(function() {
 
     // call function
     changeQuestionColor();
-    // showScoreboard();
+    showScoreboard();
     
     
     displayRandomQuestion(level);
@@ -145,17 +145,17 @@ $(document).ready(function() {
     }
 
   
-    // $(".choices-btn").hide();
+    $(".choices-btn").hide();
     // Show the scoreboard and questions when the button is clicked, and hide start btn
     function showScoreboard() {
-      // $("#start-btn").click(function() {
-        // $("#start-btn").hide();
+      $("#start-btn").click(function() {
+        $("#start-btn").hide();
         $(".loading-gif").show(); // Show the gif element
         setTimeout(function() {
           $(".loading-gif").hide(); // Hide the gif element 
-          // $(".choices-btn").show();
+          $(".choices-btn").show();
           displayRandomQuestion(level);
-          // $("#scoreboard").show();
+          $("#scoreboard").show();
           $("#scoreboard").css("display", "flex");
           $(".container").css("margin-top", "auto");
           gameSound.volume = 0.2;

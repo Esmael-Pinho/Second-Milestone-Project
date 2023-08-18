@@ -160,9 +160,8 @@ $(document).ready(function() {
     });
   }
 
-  $("#modalContact").show();
   // modal open after click feedback button
-  // $(".message-btn").click(function() {
+  $(".message-btn").click(function() {
     $("#modalContact").show();
   });
 
