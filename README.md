@@ -240,6 +240,15 @@ The only bugs detected were css ones, as there were some contents overflowing, b
 - [Microsoft Bing](https://allears.net/)
   - Microsoft Bing was used to obtain some images used on the project.
 
+ - This were the programs i used for testing:
+
+- [WC3 Validator](https://validator.w3.org/) - HTML and CSS files
+
+- [JSHint](https://jshint.com/) - JavaScript files
+
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse/) - To test the web page, performance, accessibility, best practices and SEO.
+
+
 
 # Deployment
 Github Pages was used to deploy the live website. The instructions to achieve this are below:
@@ -312,7 +321,7 @@ Final Testing:
 | **Overlay-Home-Page** | **Levels** | **Game** | **404-Page** | **End-Game-Page** |
 |-----------------------|------------|----------|--------------|-------------------|
 | [Home-Page](/docs/assets/images/readme/LightHouse/) | [Levels](/docs/assets/images/readme/LightHouse/) | [Game-Page](docs/assets/images/readme/LightHouse/) | [404-Page](docs/assets/images/readme/LightHouse/) |
-|* Still to test |* Still to test |* Still to test |* Still to test |
+|* Still to test |* Still to test |* Still to test |* Still to test | |
 
 
 ### Full Testing
