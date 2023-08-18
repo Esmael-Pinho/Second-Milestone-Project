@@ -1,20 +1,20 @@
 
 Milestone Project 2.
 
-# ![Popping Logo](docs/assets/images/readme/logo.png) 
+# ![Popping Logo](docs/assets/images/readme/Logo.png) 
 
 
 
-![Image of  on different devices]()
+![Image of  on different devices](docs/assets/images/readme/Im-Responsive.png)
 
 ## Live Project
 
 
-[Click me for live link.]()
+[Click me for live link.](https://esmael-pinho.github.io/Second-Milestone-Project/)
 
 ## Repository
 
-[Click me for the project repository.]()
+[Click me for the project repository.](https://github.com/Esmael-Pinho/Second-Milestone-Project)
 
 
 # Table of Contents
@@ -55,7 +55,7 @@ Milestone Project 2.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Website Load | Player opens the website | The website loads quickly with no issues | [Works as expected](docs/assets/images/readme/home-page.png) |
+| Website Load | Player opens the website | The website loads quickly with no issues | ![Works as expected](docs/assets/images/readme/Home-page.png) |
 
 
 - As a player, I want to be able to visualize the contents of - Demo - so i can understand and interact with the game.
@@ -70,21 +70,21 @@ Milestone Project 2.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Level selected | Choose difficulty level | Game starts according to level selected | ![Works as expected](docs/assets/video) |
+| Level selected | Choose difficulty level | Game starts according to level selected | ![Works as expected](docs/assets/images/readme/Levels-game.png) |
 
 
 - As a player, I want to be able to check my progress, the correct and incorrect answers ans score during the game.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Game Page | Game start - Mid Game - End Game  | Clear progress indication throughout the game  | [Works as expected](docs/assets/images/readme/progress-check.png) |
+| Game Page | Game start - Mid Game - End Game  | Clear progress indication throughout the game  | ![Works as expected](docs/assets/images/readme/Game-after-start.png) |
 
 
 - As a player, I want to be able to easily navigate back to the home page after completing the quiz.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Game ended | Game quiz completion | A congratulation message, along with the player score a play again button and a home button | [Works as expected](/) |
+| Game ended | Game quiz completion | A congratulation message, along with the player score a play again button and a home button | ![Works as expected](docs/assets/images/readme/End-game-page.png) |
 
 ### Business Owner
 
@@ -107,7 +107,7 @@ The website consists of three pages home-page, level-page, game-page. The pages 
 
 
 ## Color Scheme
-![Popping](docs/assets/images/readme/Colors/milestone-project-2.png)
+![Bubbles](docs/assets/images/readme/Colors/milestone-project-2.png)
 
   * The website uses a palette of colors generated using the [Coolors]("https://coolors.co/") website. 
   It uses a simple color scheme of Persian-pink and rose , Cherry-blossom and Amethyst with pops of dark-blue and red, along with the primary color.
@@ -132,7 +132,7 @@ The website consists of three pages home-page, level-page, game-page. The pages 
 ### Home-Page
  - This page shows an welcome message to the game, along with two button options: A Demo button and a Play button on a vibrant red. On the background, as an overlay it displays different bubbles from random colors.
 
- ![Home-Page](docs/assets/images/readme/home-page.png)
+ ![Home-Page](docs/assets/images/readme/Home-page.png)
 
  | **Demo-Page** | **Play Button** | **Logo** |
 |----------------|-----------------|----------|
@@ -141,7 +141,7 @@ The website consists of three pages home-page, level-page, game-page. The pages 
 ### Levels-Page
  - This page requests the user to select a game difficulty level. Displaying a container with three buttons, easy, medium, hard, each representing a game level. The page also displays a home and a sound button, in case the player wants to return to the home-page, or simply toggle the sound off.
 
- ![Levels-Page](docs/assets/images/readme/Levels-page.png)
+ ![Levels-Page](docs/assets/images/readme/Levels-game.png)
 
 | **Home-btn** | **Sound-btn** | **Easy - Medium - Hard buttons**|
 |--------------|---------------|---------------------------------|
@@ -163,22 +163,22 @@ The website consists of three pages home-page, level-page, game-page. The pages 
 | Upon clicking the btn a loading git is displayed to show interactivity, then displays scoreboard along with questions and the options-btn | Each as four different choices, being them 4. clicking on the right on will increment the question number as well as correctAnswers | Depending on the choice it will activate a different sound conformed   |
 
 Before game start:
-  ![Game-Page](docs/assets/images/readme/Before-game-start.png)
+  ![Game-Page](docs/assets/images/readme/Game-before-start.png)
 
 After game start:
-  ![Game-Page](docs/assets/images/readme/)
+  ![Game-Page](docs/assets/images/readme/Game-after-start.png)
 
 
   ### Game-End-Page
   - This page shows a congratulations message to the user along the the total score, and asks for a feedback.
 
-  ![Game-End-Page](docs/assets/images/readme/Error-404-Page.png)
+  ![Game-End-Page](docs/assets/images/readme/End-game-page.png)
 
 
   ### 404-Page
   - This page shows Error 404 in case there's been some error pulling the questions. And asks the user to go back to the home-page by clicking the button in order to try again.
 
-  ![404-Page](docs/assets/images/readme/Error-404-Page.png)
+  ![404-Page](docs/assets/images/readme/Page-404.png)
 
 
 # Known Bugs
@@ -254,7 +254,7 @@ The only bugs detected were css ones, as there were some contents overflowing, b
 Github Pages was used to deploy the live website. The instructions to achieve this are below:
 
 1. Log in (or sign up) to Github.
-2. Find the repository for this project, .
+2. Find the repository for this project, [Bubbles](https://github.com/Esmael-Pinho/Second-Milestone-Project).
 3. Click on the Settings link.
 4. Click on the Pages link in the left hand side navigation bar.
 5. In the Source section, choose main from the drop down select branch menu. Select docs/ from the drop down select folder menu.
@@ -266,7 +266,7 @@ Forks are used to propose changes to someone else's project or to use someone el
 To fork the Popping repository:
 
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, .
+2. Go to the repository for this project, [Bubbles](https://github.com/Esmael-Pinho/Second-Milestone-Project).
 3. Click the Fork button in the top right corner.
 4. You should now have a copy of the original repository in your GitHub account.
 
@@ -275,7 +275,7 @@ To fork the Popping repository:
 To clone the Popping repository:
 
 1. Log in (or sign up) to GitHub.
-2. Go to the repository for this project, .
+2. Go to the repository for this project, [Bubbles](https://github.com/Esmael-Pinho/Second-Milestone-Project).
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
@@ -288,24 +288,24 @@ To clone the Popping repository:
 
 | **Overlay-Home-Page** | **Levels** | **Game** | **404-Page** | **End-Game-Page** | **Style.css** |
 |-----------------------|------------|----------|--------------|-------------------|---------------|
-| [Home-Page](/docs/assets/images/readme/home-page-initial-test.png) | [Levels](/docs/assets/images/readme/levels-page-initial-test.png) | [Game-Page](docs/assets/images/readme/Game-page-initial-test.png) | [404-Page](docs/assets/images/readme/Page-404-test.png) | [Css](docs/assets/images/readme/Css-initial-test.png) |
-|* Warning about using aria-label on div |* Unnecessary use of type attribute for script javascript, and aria-labelledby for empty content |* Duplicated ids and empty heading 'h2' |* No issues found |* No issues found |
+| [Home-Page](/docs/assets/images/readme/home-page-initial-test.png) | [Levels](/docs/assets/images/readme/levels-page-initial-test.png) | [Game-Page](docs/assets/images/readme/Game-page-initial-test.png) | [404-Page](docs/assets/images/readme/Page-404-test.png) | [End-Game-Page](docs/assets/images/readme/WC3-final-test/End-game-final-test.png) |[Css](docs/assets/images/readme/Css-initial-test.png) |
+|* Warning about using aria-label on div |* Unnecessary use of type attribute for script javascript, and aria-labelledby for empty content |* Duplicated ids and empty heading 'h2' |* No issues found |* No issues found |* No issues found |
 
 
 * Final Testing
 
 | **Overlay-Home-Page** | **Levels** | **Game** | **404-Page** | **End-Game-Page** | **Style.css** |
 |-----------------------|------------|----------|--------------|-------------------|---------------|
-| [Home-Page](/docs/assets/images/readme/home-page-final-test.png) | [Levels](/docs/assets/images/readme/Levels-page-final-test.png) | [Game-Page]() | [404-Page](docs/assets/images/readme/Page-404-test.png) | [Css]() |
-|* No issues found |* No issues found | |* No issues found | |
+| [Home-Page](/docs/assets/images/readme/home-page-final-test.png) | [Levels](/docs/assets/images/readme/Levels-page-final-test.png) | [Game-Page](docs/assets/images/readme/WC3-final-test/Game-page-final-test.png) | [404-Page](docs/assets/images/readme/Page-404-test.png) | [End-Game-Page](docs/assets/images/readme/WC3-final-test/End-game-final-test.png) | [Css](docs/assets/images/readme/CSS-test/CSS-final-test.png) |
+|* No issues found |* No issues found |* Warning empty heading, but i want and need that heading to be empty, as i will be adding extra code through game.js |* No issues found |* No issues found |* No issues found |
 
 
 ### JShint
 
 | **Script.js** | **Email.js** | **Game.js** |
 |---------------|--------------|-------------|
-| [Script test](/docs/assets/images/readme/Jshint-test/Script-js-test.png) | [Email test](/docs/assets/images/readme/Jshint-test/email.js-test.png) | [Game.js test]() |
-|* Warning: 2 undefined variables -$- and innerwidth . It kept saying that the jquery symbol was undefined, I did search as to why that could be but couldn't find any reason. |* Warnings: 2 undefined variables -$- and emailjs, and 1 unused sendEmail, but sendEmail is link on the html page. |*  |
+| [Script test](/docs/assets/images/readme/Jshint-test/Script-js-test.png) | [Email test](/docs/assets/images/readme/Jshint-test/email.js-test.png) | [Game.js test](docs/assets/images/readme/Jshint-test/Game-javascript-test.png) |
+|* Warning: 2 undefined variables -$- and innerwidth . It kept saying that the jquery symbol was undefined, I did search as to why that could be but couldn't find any reason. |* Warnings: 2 undefined variables -$- and emailjs, and 1 unused sendEmail, but sendEmail is link on the html page. |* Warning 1 undefined varial the jquery dollar symbol |
 
 
 ### Lighthouse
@@ -313,15 +313,17 @@ Initial Testing:
 
 | **Overlay-Home-Page** | **Levels** | **Game** | **404-Page** | **End-Game-Page** |
 |-----------------------|------------|----------|--------------|-------------------|
-| [Home-Page](/docs/assets/images/readme/LightHouse/home-page-lighthouse-test.png) | [Levels](/docs/assets/images/readme/LightHouse/levels-page-lighthouse-test.png) | [Game-Page](docs/assets/images/readme/LightHouse/game-before-start-lighthouse-test.png) | [404-Page](docs/assets/images/readme/LightHouse/page-404-lighthouse-test.png) |
-|* No main issues.Just the fact that I have some extensions that seem to be affecting the SEO. - Final test to be on a incognito mode, to see if the issue continues. |* Extensions issues |* Extensions issues |* Extensions issues |
+| [Home-Page](/docs/assets/images/readme/LightHouse/home-page-lighthouse-test.png) | [Levels](/docs/assets/images/readme/LightHouse/levels-page-lighthouse-test.png) | [Game-Page](docs/assets/images/readme/LightHouse/game-before-start-lighthouse-test.png) | [404-Page](docs/assets/images/readme/LightHouse/page-404-lighthouse-test.png) | [End-game](docs/assets/images/readme/LightHouse/End-game-lighthouse-test.png)
+|* No main issues.Just the fact that I have some extensions that seem to be affecting the SEO. - Final test to be on a incognito mode, to see if the issue continues. |* Extensions issues |* Extensions issues |* Extensions issues | error displayong the performance as it shows [this](docs/assets/images/readme/Lighthouse-error.png) |
 
 Final Testing:
 
 | **Overlay-Home-Page** | **Levels** | **Game** | **404-Page** | **End-Game-Page** |
 |-----------------------|------------|----------|--------------|-------------------|
-| [Home-Page](/docs/assets/images/readme/LightHouse/) | [Levels](/docs/assets/images/readme/LightHouse/) | [Game-Page](docs/assets/images/readme/LightHouse/) | [404-Page](docs/assets/images/readme/LightHouse/) |
-|* Still to test |* Still to test |* Still to test |* Still to test | |
+| [Home-Page](/docs/assets/images/readme/LightHouse/Game-lighthouse-test.png) | [Levels](/docs/assets/images/readme/LightHouse/) | [Game-Page](docs/assets/images/readme/LightHouse/) | [404-Page](docs/assets/images/readme/LightHouse/) | [End-Game-Page](docs/assets/images/readme/LightHouse/End-game-lighthouse-test.png)
+|* On the img above it worked, but most of times doesn't work like [this](docs/assets/images/readme/LightHouse/Game-medium-lighthouse-fail.png), or [this](docs/assets/images/readme/LightHouse/Game-hard-level-lighthouse-fail.png) |* same error for the late testings, as i dont't understand because the intial testings worked ![error](docs/assets/images/readme/Lighthouse-error.png) |* Initial test ok but last test ![error](docs/assets/images/readme/Lighthouse-error.png) |* Initial test ok but last test ![error](docs/assets/images/readme/Lighthouse-error.png) |* Initial and last test ![error](docs/assets/images/readme/Lighthouse-error.png) |
+
+
 
 
 ### Full Testing
