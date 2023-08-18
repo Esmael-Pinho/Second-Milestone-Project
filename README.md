@@ -5,16 +5,16 @@ Milestone Project 2.
 
 
 
-![Image of  on different devices]()
+![Image of  on different devices](docs/assets/images/readme/Im-Responsive.png)
 
 ## Live Project
 
 
-[Click me for live link.]()
+[Click me for live link.](https://esmael-pinho.github.io/Second-Milestone-Project/)
 
 ## Repository
 
-[Click me for the project repository.]()
+[Click me for the project repository.](https://github.com/Esmael-Pinho/Second-Milestone-Project)
 
 
 # Table of Contents
@@ -254,7 +254,7 @@ The only bugs detected were css ones, as there were some contents overflowing, b
 Github Pages was used to deploy the live website. The instructions to achieve this are below:
 
 1. Log in (or sign up) to Github.
-2. Find the repository for this project, .
+2. Find the repository for this project, [Bubbles](https://github.com/Esmael-Pinho/Second-Milestone-Project).
 3. Click on the Settings link.
 4. Click on the Pages link in the left hand side navigation bar.
 5. In the Source section, choose main from the drop down select branch menu. Select docs/ from the drop down select folder menu.
@@ -266,7 +266,7 @@ Forks are used to propose changes to someone else's project or to use someone el
 To fork the Popping repository:
 
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, .
+2. Go to the repository for this project, [Bubbles](https://github.com/Esmael-Pinho/Second-Milestone-Project).
 3. Click the Fork button in the top right corner.
 4. You should now have a copy of the original repository in your GitHub account.
 
@@ -275,7 +275,7 @@ To fork the Popping repository:
 To clone the Popping repository:
 
 1. Log in (or sign up) to GitHub.
-2. Go to the repository for this project, .
+2. Go to the repository for this project, [Bubbles](https://github.com/Esmael-Pinho/Second-Milestone-Project).
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
