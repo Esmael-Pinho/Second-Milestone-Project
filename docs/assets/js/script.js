@@ -14,7 +14,7 @@ $(document).ready(function() {
   });
 
   // links logo and game home-btn to index.html
-  $(".pop, .game-home-btn").click(function() {
+  $(".pop, .level-home-btn, .game-home-btn").click(function() {
     window.location.href = "index.html";
   });
 

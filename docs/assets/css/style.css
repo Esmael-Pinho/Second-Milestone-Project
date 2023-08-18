@@ -1045,12 +1045,12 @@ dialog p {
         font-size: 56px;
     }
     #level-text{
-        margin: 2.55rem auto;
+        margin: 1rem auto;
     }
     
     .game-area {
         width: 610px;
-        height: 200vh;
+        height: 160vh;
     }
     .level-difficulty-area {
         width: 610px;
@@ -1081,7 +1081,7 @@ dialog p {
     /* Game Page */
     #scoreboard {
         width: 90%;
-        margin: 1.85rem auto;
+        margin: 1rem auto;
     }
     #questions-container {
         margin-bottom: .25rem;
@@ -1139,11 +1139,11 @@ dialog p {
 
     /* Levels Page */
     .title {
-        font-size: 62px;
+        font-size: 60px;
     }
     .game-area {
         width: 900px;
-        height: 85vh;
+        height: 75vh;
     }
     #game-container {
         margin-left: 50px;
@@ -1171,12 +1171,33 @@ dialog p {
     }
 
     /* Game Page */
+    #game-header {
+        display: inline-flex;
+        margin: auto;
+    }
+    #scoreboard {
+        width: 50%;
+        margin: .5rem auto;
+    }
+    #questions-container {
+        width: 850px;
+        height: 87px;
+        min-width: 850px;
+        min-height: 87px;
+        padding: 0 1rem;
+        margin: auto;
+    }
     #question {
         padding: 1.5rem 2.5rem;
     }
+    .game-area {
+        width: 900px;
+        height: 75vh;
+    }
     #bubbles-game {
+        top: auto;
         left: 50px;
-        width: 820px;
+        width: 800px;
     }
     .game-home-btn {
         left: -15%;
@@ -1190,11 +1211,14 @@ dialog p {
         left: 46.5%;
     }
     #choices-container {
-        gap: 2.5rem 2.5rem;
+        gap: 1rem;
     }
     .choices {
-        width: 220px;
-        height: 220px;
+        width: 240px;
+        height: 240px;
+    }
+    .message-btn {
+        margin: auto auto 1rem;
     }
 
     /*  End-Game */
