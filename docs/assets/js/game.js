@@ -149,11 +149,11 @@ $(document).ready(function() {
     // Show the scoreboard and questions when the button is clicked, and hide start btn
     function showScoreboard() {
       $("#start-btn").click(function() {
-        $("#start-btn").hide();
+        // $("#start-btn").hide();
         $(".loading-gif").show(); // Show the gif element
         setTimeout(function() {
           $(".loading-gif").hide(); // Hide the gif element 
-          $(".choices-btn").show();
+          // $(".choices-btn").show();
           displayRandomQuestion(level);
           // $("#scoreboard").show();
           $("#scoreboard").css("display", "flex");
